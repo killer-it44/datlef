@@ -66,15 +66,10 @@
             }
         }
 
-        const ctx = document.getElementById('chart');
-        let data
-        let label = 'page visits'
-        let xValues = ['January', 'February', 'March', 'April', 'May', 'June', 'July']
-        let yValues = [65, 59, 80, undefined, 56, 55, 40]
-        let chart
+        let data, label, xValues = [], yValues = [], chart
 
         const renderChart = () => {
-            chart = new Chart(ctx, {
+            chart = new Chart(document.getElementById('chart'), {
                 type: 'line',
                 data: {
                     labels: xValues,
@@ -82,10 +77,6 @@
                         label,
                         data: yValues,
                         borderColor: 'blue'
-                        // }, {
-                        //     label: 'unique visitors',
-                        //     data: [6, 10, 12, undefined, 20, 15, 12],
-                        //     borderColor: 'red'
                     }]
                 }
             })
