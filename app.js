@@ -38,6 +38,7 @@ class App {
             if (res.headersSent) {
                 return next(err)
             }
+            console.error(err)
             res.status(500).type('text/plain').send(`Error:\n${err.message}\n${err.hint || ''}`)
         })
 

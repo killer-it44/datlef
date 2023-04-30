@@ -1,6 +1,6 @@
-CREATE TABLE IF NOT EXISTS "analytics" (
-   "sourceUri" VARCHAR(2048) NOT NULL,
-   "targetUri" VARCHAR(2048) NOT NULL,
-   "userId" BIGINT NOT NULL,
-   "instant" TIMESTAMP NOT NULL
+create table if not exists "analytics" (
+   "sourceUri" varchar(2048) not null,
+   "targetUri" varchar(2048) not null,
+   "userId" bigint not null,
+   "timestamp" timestamp not null
 );
