@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div>
+        <select id='queries' onchange='selectQuery()'>
+            <option value=''>-Select Query-</option>
+        </select>
+        <input id='showHideQueryDetails' type='checkbox' onclick='showHideQueryDetails()'>Show Details</button>
+        <a id='download' style='display: none;'>Download CSV</a>
+
+        <div id='queryDetails' style='display: none;'>
+            <textarea id='sql' style='width: 40vw; height: 12em;'>
+            </textarea>
+            <button onclick='query()'>Go</button>
+            <textarea id='data' style='width: 40vw; height: 12em;'>
+            </textarea>
+        </div>
+        <div>
+            <canvas id='chart'></canvas>
+        </div>
+    </div>
+    <script src='https://cdn.jsdelivr.net/npm/chart.js'></script>
+    <script src='queries.js'></script>
+
+    <script>
+        const showHideQueryDetails = () => {
+            document.getElementById('queryDetails').style = document.getElementById('showHideQueryDetails').checked
+                ? 'display: flex; flex-direction: column; position: absolute; top: 2em;'
+                : 'display: none;'
+        }
+
+        const queryList = document.getElementById('queries')
+        queries.forEach(q => {
+            const option = document.createElement('option')
+            option.value = q.name
+            option.innerHTML = q.name
+            queryList.appendChild(option)
+        })
+
+        const selectQuery = async (evt) => {
+            const name = document.getElementById('queries').value
+            document.getElementById('sql').value = queries.find(q => q.name === name).sql
+            query()
+        }
+
+        const query = async () => {
+            const downloadLink = document.getElementById('download')
+            downloadLink.style = 'display: none;'
+            const sql = document.getElementById('sql').value
+            const response = await fetch(`/api/query.json?sql=${sql}`)
+            if (response.ok) {
+                data = await response.json()
+                xKey = Object.keys(data[0])[0]
+                yKey = Object.keys(data[0])[1]
+                label = yKey
+                xValues = data.map(record => record[xKey])
+                yValues = data.map(record => record[yKey])
+                chart.destroy()
+                renderChart()
+                document.getElementById('data').innerHTML = JSON.stringify(data, null, '  ')
+                downloadLink.style = ''
+                downloadLink.href = `/api/query.csv?sql=${sql}`
+            } else {
+                document.getElementById('data').innerHTML = await response.text()
+            }
+        }
+
+        const ctx = document.getElementById('chart');
+        let data
+        let label = 'page visits'
+        let xValues = ['January', 'February', 'March', 'April', 'May', 'June', 'July']
+        let yValues = [65, 59, 80, undefined, 56, 55, 40]
+        let chart
+
+        const renderChart = () => {
+            chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        label,
+                        data: yValues,
+                        borderColor: 'blue'
+                        // }, {
+                        //     label: 'unique visitors',
+                        //     data: [6, 10, 12, undefined, 20, 15, 12],
+                        //     borderColor: 'red'
+                    }]
+                }
+            })
+        }
+
+        renderChart()
+    </script>
+</body>
+
+</html>
