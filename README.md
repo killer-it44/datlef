@@ -1,4 +1,4 @@
-# Datlev
+# Datlef
 
 Your best friend for data crunching.
 
@@ -13,11 +13,11 @@ To setup:
 
 ## Approach
 
-The design goal of Datlev is that users get the most flexible and performant approach, so that they will _never_ be blocked by limited functionality or poor performance. At the same time, it should still be simple to use.
+The design goal of Datlef is that users get the most flexible and performant approach, so that they will _never_ be blocked by limited functionality or poor performance. At the same time, it should still be simple to use.
 
-To achieve maximum flexibility and performance, users use SQL directly on the frontend, which Datlev supplies the query directly and unmodified to the server for immediate execution.
+To achieve maximum flexibility and performance, users use SQL directly on the frontend, which Datlef supplies the query directly and unmodified to the server for immediate execution.
 
-To keep it simple, named template queries are available from a dropdown. Datlev allows the user to freely modify the template queries through a details menu, before sending them.
+To keep it simple, named template queries are available from a dropdown. Datlef allows the user to freely modify the template queries through a details menu, before sending them.
 
 ## API
 
