@@ -21,10 +21,16 @@ To keep it simple, named template queries are available from a dropdown. Datlev 
 
 ## API
 
-Any SQL is supported, as long as the result adheres to the following semantics:
-- The first column will be interpreted as the category column / x-axis, it can be textual or numeric
-- The second column will be interpreted as the values column / y-axis, it must be numeric
-- Future: support multiple value columns that can be visualized as stacked bar charts, bubble charts, ...
+### HTTP API
+
+The UI is generic just sends SQL queries to an endpoint `/api/query.[type]?[sql]`, where `type` is either `json` (for rendering the chart) or `csv` (if the user wants to download the result).
+
+### SQL Contract
+
+Any SQL is supported by the UI, as long as the result adheres to the following structure and semantics:
+- The first result column will be interpreted as the category column / x-axis, it can be textual or numeric
+- The second result column will be interpreted as the values column / y-axis, it must be numeric
+- (Future: ideally we will later support multiple value columns that can be visualized as stacked bar charts, bubble charts, ...)
 
 ### Examples
 
