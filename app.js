@@ -6,7 +6,7 @@ import JSONStream from 'JSONStream'
 
 class App {
     run(config) {
-        const pool = new pg.Pool({ connectionString: config.dbConnectionString })
+        const pool = new pg.Pool(config.db)
         const app = express()
 
         app.use(express.static('web-content'))
