@@ -1,44 +1,60 @@
 const queries = [
     {
+        'name': 'total page views per group',
+        'sql': `SELECT
+    p.group_name as page,
+    count(*) AS views 
+FROM pagehit JOIN page p ON page_id = p.id
+    GROUP BY page`
+    },
+    {
+        'name': 'page viewers per group',
+        'sql': `SELECT
+    p.group_name as page,
+    count(distinct user_id) AS views 
+FROM pagehit JOIN page p ON page_id = p.id
+    GROUP BY page`
+    },    
+    {
         'name': 'clicks by target page',
         'sql': `SELECT 
-    "targetUri" AS page,
+    target_uri AS page,
     count(*) AS clicks 
-FROM analytics 
+FROM click 
     GROUP BY page`
     },
     {
         'name': 'total clicks per week',
         'sql': `SELECT 
     concat(
-        date_part('year', "timestamp"::date), 
-        date_part('week', "timestamp"::date)
-    ) AS "week",
-    count(*) AS "clicks" 
-FROM "analytics"
-    GROUP BY "week"
-    ORDER BY "week"`
+        date_part('year', instant::date), 
+        date_part('week', instant::date)
+    ) AS week,
+    count(*) AS clicks 
+FROM click 
+    GROUP BY week
+    ORDER BY week`
     },
     {
         'name': 'unique clicks per week',
         'sql': `SELECT 
     concat(
-        date_part('year', "timestamp"::date), 
-        date_part('week', "timestamp"::date)
-    ) AS "week",
-    count(DISTINCT "userId") AS "clicks"
-FROM "analytics"
-    GROUP BY "week"
-    ORDER BY "week"`
+        date_part('year', instant::date), 
+        date_part('week', instant::date)
+    ) AS week,
+    count(DISTINCT user_id) AS clicks 
+FROM click
+    GROUP BY week
+    ORDER BY week`
     },
     {
         'name': 'clicks per day, last 7',
         'sql': `SELECT date, sum(clicks) AS clicks FROM (
     SELECT 
-        timestamp::date AS date,
+        instant::date AS date,
         count(*) AS clicks
-    FROM analytics
-    WHERE timestamp > current_date - interval '7' day
+    FROM click
+    WHERE instant > current_date - interval '7' day
     GROUP BY date 
 UNION
     SELECT dt::date AS date, 0 AS clicks FROM last_n_days(7) dt
