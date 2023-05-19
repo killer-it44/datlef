@@ -52,10 +52,12 @@
             if (response.ok) {
                 data = await response.json()
                 xKey = Object.keys(data[0])[0]
-                yKey = Object.keys(data[0])[1]
-                label = yKey
+                y1Key = Object.keys(data[0])[1]
+                y2Key = Object.keys(data[0])[2]
+
                 xValues = data.map(record => record[xKey])
-                yValues = data.map(record => record[yKey])
+                y1Values = data.map(record => record[y1Key])
+                y2Values = data.map(record => record[y2Key])
                 chart.destroy()
                 renderChart()
                 document.getElementById('data').innerHTML = JSON.stringify(data, null, '  ')
@@ -66,7 +68,7 @@
             }
         }
 
-        let data, label, xValues = [], yValues = [], chart
+        let data, xValues = [], y1Key, y2Key, y1Values = [], y2Values = [], chart
 
         const renderChart = () => {
             chart = new Chart(document.getElementById('chart'), {
@@ -74,9 +76,13 @@
                 data: {
                     labels: xValues,
                     datasets: [{
-                        label,
-                        data: yValues,
+                        label: y1Key,
+                        data: y1Values,
                         borderColor: 'blue'
+                    }, {
+                        label: y2Key,
+                        data: y2Values,
+                        borderColor: 'red'
                     }]
                 }
             })

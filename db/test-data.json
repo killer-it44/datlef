@@ -1,290 +1,699 @@
 [
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/release-toggles/",
-        "userId": 65072,
-        "timestamp": "2023-04-21T15:40:29Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://pages.github.tools.sap/hyperspace/DevOps-Insights/",
-        "userId": 65186,
-        "timestamp": "2023-04-24T06:42:00Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://pages.github.tools.sap/cloud-curriculum/materials/continuous-delivery/azure-devops-java/",
-        "userId": 65186,
-        "timestamp": "2023-04-24T08:25:28Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://app.pluralsight.com/library/courses/cloud-native-architecture-big-picture/table-of-contents",
-        "userId": 65360,
-        "timestamp": "2023-04-25T03:19:24Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/",
-        "userId": 65721,
-        "timestamp": "2023-04-27T04:45:12Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/",
-        "userId": 65072,
-        "timestamp": "2023-04-27T07:17:20Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/",
-        "userId": 65816,
-        "timestamp": "2023-04-27T12:38:57Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#community",
-        "userId": 65847,
-        "timestamp": "2023-04-27T15:07:36Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://pages.github.tools.sap/agile/methods/communities/index.html",
-        "userId": 65847,
-        "timestamp": "2023-04-27T15:07:38Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://pages.github.tools.sap/agile/methods/agile-education.html",
-        "userId": 65847,
-        "timestamp": "2023-04-27T15:09:09Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://scrumguides.org/scrum-guide.html",
-        "userId": 65847,
-        "timestamp": "2023-04-27T15:09:38Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3DITEM_DETAILS%26componentID%3DDEV_SCRUM_1706%26componentTypeID%3DCOURSE%26revisionDate%3D1536665760000%26fromSF%3DY&company=SAP",
-        "userId": 65862,
-        "timestamp": "2023-04-27T16:14:35Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3DITEM_DETAILS%26componentID%3DDEV_PPO_PA_1912_ILT%26componentTypeID%3DCOURSE%26revisionDate%3D1586949000000%26fromSF%3DY&company=SAP",
-        "userId": 65862,
-        "timestamp": "2023-04-27T16:15:39Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3dITEM_DETAILS%26componentID%3dDEV_%2bASEJAVA_JSCRIPT_UI5_1508%26componentTypeID%3dCOURSE%26revisionDate%3d1583485440000%26fromSF%3dY&company=SAP",
-        "userId": 65862,
-        "timestamp": "2023-04-27T16:16:27Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://d.dam.sap.com/s/i/a/HuUyuNr/Golden%20Path%20Guidance%20Paper.pdf",
-        "userId": 65887,
-        "timestamp": "2023-04-28T06:04:11Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3DITEM_DETAILS%26componentID%3DDEV_PPO_PA_1912_ILT%26componentTypeID%3DCOURSE%26revisionDate%3D1586949000000%26fromSF%3DY&company=SAP",
-        "userId": 65887,
-        "timestamp": "2023-04-28T06:42:42Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://sap.plateau.com/learning/user/deeplink.do?OWASP_CSRFTOKEN=VU12-QR0T-E69A-KXIT-XBD2-60U4-MALY-7K9E&linkId=ITEM_DETAILS&componentID=DEV_8000500002_EN_WBT&componentTypeID=COURSE&fromSF=Y&revisionDate=1584024240000#/84516A5E104A9755E10000000A763C7A",
-        "userId": 65887,
-        "timestamp": "2023-04-28T06:43:09Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://www.linkedin.com/learning-login/share?account=57692769&forceAccount=false&redirect=https://www.linkedin.com/learning/agile-software-development?trk%3Dshare_ent_url%26shareId%3DjKANpIbwTCuC0DR86dSRog%253D%253D",
-        "userId": 65887,
-        "timestamp": "2023-04-28T06:44:05Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://sap.sharepoint.com/sites/126802/SitePages/Artificial-Intelligence-&-Data-Science.aspx?csf=1&web=1&e=0mr6H0#start-with-the-basics",
-        "userId": 65903,
-        "timestamp": "2023-04-28T07:35:02Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://sap.sharepoint.com/_layouts/15/sharepoint.aspx",
-        "userId": 65913,
-        "timestamp": "2023-04-28T08:05:18Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://pages.github.tools.sap/cloud-curriculum/cloud-native-developer-journey/",
-        "userId": 65913,
-        "timestamp": "2023-04-28T08:12:13Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://pages.github.tools.sap/cloud-curriculum/materials/cloud-microservices/intro-java/",
-        "userId": 65916,
-        "timestamp": "2023-04-28T08:14:44Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#learn",
-        "userId": 65974,
-        "timestamp": "2023-04-28T09:14:16Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#learn",
-        "userId": 65975,
-        "timestamp": "2023-04-28T09:16:01Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://app.pluralsight.com/library/courses/agile-fundamentals/table-of-contents",
-        "userId": 65976,
-        "timestamp": "2023-04-28T09:16:18Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#learn",
-        "userId": 65977,
-        "timestamp": "2023-04-28T09:17:00Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3dITEM_DETAILS%26componentID%3dLINKEDINLEARNING_60182%26componentTypeID%3dCOURSE%26revisionDate%3d1588267096000%26fromSF%3dY&company=SAP",
-        "userId": 65978,
-        "timestamp": "2023-04-28T09:17:04Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://app.pluralsight.com/library/courses/agile-fundamentals/table-of-contents",
-        "userId": 65980,
-        "timestamp": "2023-04-28T09:18:02Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://video.sap.com/media/t/1_4uf1trbk",
-        "userId": 65981,
-        "timestamp": "2023-04-28T09:18:30Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://sap.sharepoint.com/_layouts/15/sharepoint.aspx",
-        "userId": 65913,
-        "timestamp": "2023-04-28T09:38:03Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://teams.microsoft.com/l/channel/19:5272745437f34447889dd11b2da64324%40thread.tacv2/DORA?groupId=e3cb44ac-9838-4e6e-abd3-5fb99a130bbc&tenantId=42f7676c-f455-423c-82f6-dc2d99791af7",
-        "userId": 66010,
-        "timestamp": "2023-04-28T10:04:02Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://pages.github.tools.sap/hyperspace/DevOps-Insights/",
-        "userId": 66012,
-        "timestamp": "2023-04-28T10:04:39Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/",
-        "userId": 66017,
-        "timestamp": "2023-04-28T10:22:48Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://pages.github.tools.sap/hyperspace/DevOps-Insights/",
-        "userId": 66019,
-        "timestamp": "2023-04-28T10:36:36Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx?ga=1#dora-sap",
-        "userId": 66020,
-        "timestamp": "2023-04-28T10:51:25Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://teams.microsoft.com/l/channel/19:5272745437f34447889dd11b2da64324%40thread.tacv2/DORA?groupId=e3cb44ac-9838-4e6e-abd3-5fb99a130bbc&tenantId=42f7676c-f455-423c-82f6-dc2d99791af7",
-        "userId": 66020,
-        "timestamp": "2023-04-28T10:51:33Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://pages.github.tools.sap/cloud-curriculum/materials/cloud-microservices/intro-java/",
-        "userId": 66021,
-        "timestamp": "2023-04-28T10:51:35Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/",
-        "userId": 66023,
-        "timestamp": "2023-04-28T10:56:56Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#learn",
-        "userId": 66026,
-        "timestamp": "2023-04-28T11:01:03Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/",
-        "userId": 66030,
-        "timestamp": "2023-04-28T11:10:36Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/resilience/",
-        "userId": 66031,
-        "timestamp": "2023-04-28T11:11:47Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://pages.github.tools.sap/cloud-curriculum/materials/continuous-delivery/azure-devops-java/",
-        "userId": 66051,
-        "timestamp": "2023-04-28T12:44:51Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://pages.github.tools.sap/hyperspace/DevOps-Insights/",
-        "userId": 66020,
-        "timestamp": "2023-04-28T12:45:17Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://teams.microsoft.com/l/channel/19:5272745437f34447889dd11b2da64324%40thread.tacv2/DORA?groupId=e3cb44ac-9838-4e6e-abd3-5fb99a130bbc&tenantId=42f7676c-f455-423c-82f6-dc2d99791af7",
-        "userId": 66054,
-        "timestamp": "2023-04-28T13:12:20Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/",
-        "userId": 66058,
-        "timestamp": "2023-04-28T13:21:31Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/lead_time_for_changes/",
-        "userId": 66060,
-        "timestamp": "2023-04-28T13:35:05Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://jam4.sapjam.com/groups/ZM9tpODrP8MI5tPjwMOljn/overview_page/zSwBpo0FwmMp2jqWLqfccR",
-        "userId": 66078,
-        "timestamp": "2023-04-28T15:12:58Z"
-    },
-    {
-        "sourceUri": "https://sap.sharepoint.com",
-        "targetUri": "https://fiorilaunchpad.sap.com/sites#my-events&/ig=10545423",
-        "userId": 66078,
-        "timestamp": "2023-04-29T02:03:35Z"
-    }
+{"id":"1","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/release-toggles/","user_id":"65072","instant":"2023-04-21T15:40:29.000Z"}
+,
+{"id":"12","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/","user_id":"65186","instant":"2023-04-24T06:42:00.000Z"}
+,
+{"id":"13","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/continuous-delivery/azure-devops-java/","user_id":"65186","instant":"2023-04-24T08:25:28.000Z"}
+,
+{"id":"14","source_uri":"https://sap.sharepoint.com","target_uri":"https://app.pluralsight.com/library/courses/cloud-native-architecture-big-picture/table-of-contents","user_id":"65360","instant":"2023-04-25T03:19:24.000Z"}
+,
+{"id":"15","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"65721","instant":"2023-04-27T04:45:12.000Z"}
+,
+{"id":"16","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"65072","instant":"2023-04-27T07:17:20.000Z"}
+,
+{"id":"17","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"65816","instant":"2023-04-27T12:38:57.000Z"}
+,
+{"id":"18","source_uri":"https://sap.sharepoint.com","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#community","user_id":"65847","instant":"2023-04-27T15:07:36.000Z"}
+,
+{"id":"19","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/agile/methods/communities/index.html","user_id":"65847","instant":"2023-04-27T15:07:38.000Z"}
+,
+{"id":"20","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/agile/methods/agile-education.html","user_id":"65847","instant":"2023-04-27T15:09:09.000Z"}
+,
+{"id":"21","source_uri":"https://sap.sharepoint.com","target_uri":"https://scrumguides.org/scrum-guide.html","user_id":"65847","instant":"2023-04-27T15:09:38.000Z"}
+,
+{"id":"22","source_uri":"https://sap.sharepoint.com","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3DITEM_DETAILS%26componentID%3DDEV_SCRUM_1706%26componentTypeID%3DCOURSE%26revisionDate%3D1536665760000%26fromSF%3DY&company=SAP","user_id":"65862","instant":"2023-04-27T16:14:35.000Z"}
+,
+{"id":"23","source_uri":"https://sap.sharepoint.com","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3DITEM_DETAILS%26componentID%3DDEV_PPO_PA_1912_ILT%26componentTypeID%3DCOURSE%26revisionDate%3D1586949000000%26fromSF%3DY&company=SAP","user_id":"65862","instant":"2023-04-27T16:15:39.000Z"}
+,
+{"id":"24","source_uri":"https://sap.sharepoint.com","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3dITEM_DETAILS%26componentID%3dDEV_%2bASEJAVA_JSCRIPT_UI5_1508%26componentTypeID%3dCOURSE%26revisionDate%3d1583485440000%26fromSF%3dY&company=SAP","user_id":"65862","instant":"2023-04-27T16:16:27.000Z"}
+,
+{"id":"25","source_uri":"https://sap.sharepoint.com","target_uri":"https://d.dam.sap.com/s/i/a/HuUyuNr/Golden%20Path%20Guidance%20Paper.pdf","user_id":"65887","instant":"2023-04-28T06:04:11.000Z"}
+,
+{"id":"26","source_uri":"https://sap.sharepoint.com","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3DITEM_DETAILS%26componentID%3DDEV_PPO_PA_1912_ILT%26componentTypeID%3DCOURSE%26revisionDate%3D1586949000000%26fromSF%3DY&company=SAP","user_id":"65887","instant":"2023-04-28T06:42:42.000Z"}
+,
+{"id":"27","source_uri":"https://sap.sharepoint.com","target_uri":"https://sap.plateau.com/learning/user/deeplink.do?OWASP_CSRFTOKEN=VU12-QR0T-E69A-KXIT-XBD2-60U4-MALY-7K9E&linkId=ITEM_DETAILS&componentID=DEV_8000500002_EN_WBT&componentTypeID=COURSE&fromSF=Y&revisionDate=1584024240000#/84516A5E104A9755E10000000A763C7A","user_id":"65887","instant":"2023-04-28T06:43:09.000Z"}
+,
+{"id":"28","source_uri":"https://sap.sharepoint.com","target_uri":"https://www.linkedin.com/learning-login/share?account=57692769&forceAccount=false&redirect=https://www.linkedin.com/learning/agile-software-development?trk%3Dshare_ent_url%26shareId%3DjKANpIbwTCuC0DR86dSRog%253D%253D","user_id":"65887","instant":"2023-04-28T06:44:05.000Z"}
+,
+{"id":"29","source_uri":"https://sap.sharepoint.com","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Artificial-Intelligence-&-Data-Science.aspx?csf=1&web=1&e=0mr6H0#start-with-the-basics","user_id":"65903","instant":"2023-04-28T07:35:02.000Z"}
+,
+{"id":"30","source_uri":"https://sap.sharepoint.com","target_uri":"https://sap.sharepoint.com/_layouts/15/sharepoint.aspx","user_id":"65913","instant":"2023-04-28T08:05:18.000Z"}
+,
+{"id":"31","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/cloud-curriculum/cloud-native-developer-journey/","user_id":"65913","instant":"2023-04-28T08:12:13.000Z"}
+,
+{"id":"32","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/cloud-microservices/intro-java/","user_id":"65916","instant":"2023-04-28T08:14:44.000Z"}
+,
+{"id":"33","source_uri":"https://sap.sharepoint.com","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#learn","user_id":"65974","instant":"2023-04-28T09:14:16.000Z"}
+,
+{"id":"34","source_uri":"https://sap.sharepoint.com","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#learn","user_id":"65975","instant":"2023-04-28T09:16:01.000Z"}
+,
+{"id":"35","source_uri":"https://sap.sharepoint.com","target_uri":"https://app.pluralsight.com/library/courses/agile-fundamentals/table-of-contents","user_id":"65976","instant":"2023-04-28T09:16:18.000Z"}
+,
+{"id":"36","source_uri":"https://sap.sharepoint.com","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#learn","user_id":"65977","instant":"2023-04-28T09:17:00.000Z"}
+,
+{"id":"37","source_uri":"https://sap.sharepoint.com","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3dITEM_DETAILS%26componentID%3dLINKEDINLEARNING_60182%26componentTypeID%3dCOURSE%26revisionDate%3d1588267096000%26fromSF%3dY&company=SAP","user_id":"65978","instant":"2023-04-28T09:17:04.000Z"}
+,
+{"id":"38","source_uri":"https://sap.sharepoint.com","target_uri":"https://app.pluralsight.com/library/courses/agile-fundamentals/table-of-contents","user_id":"65980","instant":"2023-04-28T09:18:02.000Z"}
+,
+{"id":"39","source_uri":"https://sap.sharepoint.com","target_uri":"https://video.sap.com/media/t/1_4uf1trbk","user_id":"65981","instant":"2023-04-28T09:18:30.000Z"}
+,
+{"id":"40","source_uri":"https://sap.sharepoint.com","target_uri":"https://sap.sharepoint.com/_layouts/15/sharepoint.aspx","user_id":"65913","instant":"2023-04-28T09:38:03.000Z"}
+,
+{"id":"41","source_uri":"https://sap.sharepoint.com","target_uri":"https://teams.microsoft.com/l/channel/19:5272745437f34447889dd11b2da64324%40thread.tacv2/DORA?groupId=e3cb44ac-9838-4e6e-abd3-5fb99a130bbc&tenantId=42f7676c-f455-423c-82f6-dc2d99791af7","user_id":"66010","instant":"2023-04-28T10:04:02.000Z"}
+,
+{"id":"42","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/","user_id":"66012","instant":"2023-04-28T10:04:39.000Z"}
+,
+{"id":"43","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"66017","instant":"2023-04-28T10:22:48.000Z"}
+,
+{"id":"44","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/","user_id":"66019","instant":"2023-04-28T10:36:36.000Z"}
+,
+{"id":"45","source_uri":"https://sap.sharepoint.com","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx?ga=1#dora-sap","user_id":"66020","instant":"2023-04-28T10:51:25.000Z"}
+,
+{"id":"46","source_uri":"https://sap.sharepoint.com","target_uri":"https://teams.microsoft.com/l/channel/19:5272745437f34447889dd11b2da64324%40thread.tacv2/DORA?groupId=e3cb44ac-9838-4e6e-abd3-5fb99a130bbc&tenantId=42f7676c-f455-423c-82f6-dc2d99791af7","user_id":"66020","instant":"2023-04-28T10:51:33.000Z"}
+,
+{"id":"47","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/cloud-microservices/intro-java/","user_id":"66021","instant":"2023-04-28T10:51:35.000Z"}
+,
+{"id":"48","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"66023","instant":"2023-04-28T10:56:56.000Z"}
+,
+{"id":"49","source_uri":"https://sap.sharepoint.com","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#learn","user_id":"66026","instant":"2023-04-28T11:01:03.000Z"}
+,
+{"id":"50","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"66030","instant":"2023-04-28T11:10:36.000Z"}
+,
+{"id":"51","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/resilience/","user_id":"66031","instant":"2023-04-28T11:11:47.000Z"}
+,
+{"id":"52","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/continuous-delivery/azure-devops-java/","user_id":"66051","instant":"2023-04-28T12:44:51.000Z"}
+,
+{"id":"53","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/","user_id":"66020","instant":"2023-04-28T12:45:17.000Z"}
+,
+{"id":"54","source_uri":"https://sap.sharepoint.com","target_uri":"https://teams.microsoft.com/l/channel/19:5272745437f34447889dd11b2da64324%40thread.tacv2/DORA?groupId=e3cb44ac-9838-4e6e-abd3-5fb99a130bbc&tenantId=42f7676c-f455-423c-82f6-dc2d99791af7","user_id":"66054","instant":"2023-04-28T13:12:20.000Z"}
+,
+{"id":"55","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"66058","instant":"2023-04-28T13:21:31.000Z"}
+,
+{"id":"56","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/lead_time_for_changes/","user_id":"66060","instant":"2023-04-28T13:35:05.000Z"}
+,
+{"id":"62","source_uri":"https://sap.sharepoint.com","target_uri":"https://jam4.sapjam.com/groups/ZM9tpODrP8MI5tPjwMOljn/overview_page/zSwBpo0FwmMp2jqWLqfccR","user_id":"66078","instant":"2023-04-28T15:12:58.000Z"}
+,
+{"id":"72","source_uri":"https://sap.sharepoint.com","target_uri":"https://fiorilaunchpad.sap.com/sites#my-events&/ig=10545423","user_id":"66078","instant":"2023-04-29T02:03:35.000Z"}
+,
+{"id":"73","source_uri":"https://sap.sharepoint.com","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Pluralsight_Landing%20page.aspx?csf=1&web=1&e=S26UPm","user_id":"65862","instant":"2023-05-01T07:10:26.000Z"}
+,
+{"id":"74","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/agile/methods/communities/index.html","user_id":"66231","instant":"2023-05-02T04:48:39.000Z"}
+,
+{"id":"75","source_uri":"https://sap.sharepoint.com","target_uri":"https://sap.plateau.com/learning/user/deeplink.do?OWASP_CSRFTOKEN=VU12-QR0T-E69A-KXIT-XBD2-60U4-MALY-7K9E&linkId=ITEM_DETAILS&componentID=DEV_00001204_ILT&componentTypeID=COURSE&fromSF=Y&revisionDate=1651220752000#/D825B6D0A2017AFC17007D021DDF7A56","user_id":"66231","instant":"2023-05-02T04:49:40.000Z"}
+,
+{"id":"76","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/agile/methods/agile-education.html","user_id":"66231","instant":"2023-05-02T04:49:50.000Z"}
+,
+{"id":"77","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/agile/methods/","user_id":"66231","instant":"2023-05-02T04:53:09.000Z"}
+,
+{"id":"78","source_uri":"https://sap.sharepoint.com","target_uri":"https://sap.plateau.com/learning/user/deeplink.do?OWASP_CSRFTOKEN=VU12-QR0T-E69A-KXIT-XBD2-60U4-MALY-7K9E&linkId=ITEM_DETAILS&componentID=DEV_00001204_ILT&componentTypeID=COURSE&fromSF=Y&revisionDate=1651220752000#/D825B6D0A2017AFC17007D021DDF7A56","user_id":"66231","instant":"2023-05-02T04:53:27.000Z"}
+,
+{"id":"79","source_uri":"https://sap.sharepoint.com","target_uri":"https://sap.plateau.com/learning/user/deeplink.do?OWASP_CSRFTOKEN=VU12-QR0T-E69A-KXIT-XBD2-60U4-MALY-7K9E&linkId=ITEM_DETAILS&componentID=DEV_LEAD2AGILITY_1704&componentTypeID=COURSE&fromSF=Y&revisionDate=1537968540000#/5504925F52B5E3B4E10000000A763C7A","user_id":"66231","instant":"2023-05-02T04:54:16.000Z"}
+,
+{"id":"80","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/agile/methods/agile-education.html","user_id":"66231","instant":"2023-05-02T04:54:34.000Z"}
+,
+{"id":"81","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/agile/methods/","user_id":"66231","instant":"2023-05-02T04:54:42.000Z"}
+,
+{"id":"82","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/agile/methods/communities/index.html","user_id":"66231","instant":"2023-05-02T04:55:36.000Z"}
+,
+{"id":"83","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/EngineeringCulture/ase/","user_id":"66231","instant":"2023-05-02T04:59:36.000Z"}
+,
+{"id":"84","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/agile/methods/","user_id":"66231","instant":"2023-05-02T04:59:40.000Z"}
+,
+{"id":"85","source_uri":"https://sap.sharepoint.com","target_uri":"https://sap.plateau.com/learning/user/deeplink.do?OWASP_CSRFTOKEN=VU12-QR0T-E69A-KXIT-XBD2-60U4-MALY-7K9E&linkId=ITEM_DETAILS&componentID=DEV_8000500002_EN_WBT&componentTypeID=COURSE&fromSF=Y&revisionDate=1584024240000#/84516A5E104A9755E10000000A763C7A","user_id":"66231","instant":"2023-05-02T05:00:15.000Z"}
+,
+{"id":"86","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/EngineeringCulture/ase/","user_id":"66231","instant":"2023-05-02T05:17:43.000Z"}
+,
+{"id":"87","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/EngineeringCulture/ase/","user_id":"66231","instant":"2023-05-02T05:25:22.000Z"}
+,
+{"id":"88","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"66240","instant":"2023-05-02T06:20:57.000Z"}
+,
+{"id":"89","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/lead_time_for_changes/","user_id":"66240","instant":"2023-05-02T06:21:05.000Z"}
+,
+{"id":"90","source_uri":"https://sap.sharepoint.com","target_uri":"https://github.wdf.sap.corp/pages/ibso-tools-bootcamp/coursematerial/exercises/11/","user_id":"66252","instant":"2023-05-02T06:50:37.000Z"}
+,
+{"id":"91","source_uri":"https://sap.sharepoint.com","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#check-events","user_id":"66287","instant":"2023-05-02T09:05:01.000Z"}
+,
+{"id":"92","source_uri":"https://sap.sharepoint.com","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3DSCHEDULED_OFFERING_DETAILS%26scheduleID%3D304590%26fromSF%3DY&company=SAP","user_id":"66296","instant":"2023-05-02T09:35:36.000Z"}
+,
+{"id":"93","source_uri":"https://sap.sharepoint.com","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3dITEM_DETAILS%26componentID%3dDEV_00002273_WBT%26componentTypeID%3dCOURSE%26revisionDate%3d1671441964000%26fromSF%3dY&company=SAP","user_id":"66296","instant":"2023-05-02T09:41:52.000Z"}
+,
+{"id":"102","source_uri":"https://sap.sharepoint.com","target_uri":"https://scrumguides.org/scrum-guide.html","user_id":"66317","instant":"2023-05-02T10:50:13.000Z"}
+,
+{"id":"103","source_uri":"https://sap.sharepoint.com","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#learn","user_id":"66296","instant":"2023-05-02T11:44:42.000Z"}
+,
+{"id":"104","source_uri":"https://sap.sharepoint.com","target_uri":"https://app.pluralsight.com/library/courses/devops-big-picture-2021/table-of-contents","user_id":"66337","instant":"2023-05-02T12:40:37.000Z"}
+,
+{"id":"105","source_uri":"https://sap.sharepoint.com","target_uri":"https://app.pluralsight.com/library/courses/cloud-native-architecture-big-picture/table-of-contents","user_id":"66337","instant":"2023-05-02T12:41:12.000Z"}
+,
+{"id":"106","source_uri":"https://sap.sharepoint.com","target_uri":"https://app.pluralsight.com/sso/sap?returnUrl=channels/details/5f3be122-d383-4741-9476-9cec05c9c43b?s=1","user_id":"66338","instant":"2023-05-02T12:50:39.000Z"}
+,
+{"id":"107","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/","user_id":"66343","instant":"2023-05-02T13:04:05.000Z"}
+,
+{"id":"108","source_uri":"https://sap.sharepoint.com","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#learn","user_id":"66287","instant":"2023-05-02T13:18:31.000Z"}
+,
+{"id":"109","source_uri":"https://sap.sharepoint.com","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#check-events","user_id":"66287","instant":"2023-05-02T13:22:23.000Z"}
+,
+{"id":"110","source_uri":"https://sap.sharepoint.com","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3DITEM_DETAILS%26componentID%3DDEV_SCRUM_1706%26componentTypeID%3DCOURSE%26revisionDate%3D1536665760000%26fromSF%3DY&company=SAP","user_id":"66287","instant":"2023-05-02T13:45:40.000Z"}
+,
+{"id":"111","source_uri":"https://sap.sharepoint.com","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3DITEM_DETAILS%26componentID%3DDEV_PPO_PA_1912_ILT%26componentTypeID%3DCOURSE%26revisionDate%3D1586949000000%26fromSF%3DY&company=SAP","user_id":"66287","instant":"2023-05-02T13:45:41.000Z"}
+,
+{"id":"112","source_uri":"https://sap.sharepoint.com","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3DITEM_DETAILS%26componentID%3DDEV_SCRUM_1706%26componentTypeID%3DCOURSE%26revisionDate%3D1536665760000%26fromSF%3DY&company=SAP","user_id":"66287","instant":"2023-05-02T13:46:28.000Z"}
+,
+{"id":"164","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"mailto:cloud-native@sap.com","user_id":"66772","instant":"2023-05-04T08:00:53.000Z"}
+,
+{"id":"113","source_uri":"https://sap.sharepoint.com","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3dITEM_DETAILS%26componentID%3dDEV_%2bASEJAVA_JSCRIPT_UI5_1508%26componentTypeID%3dCOURSE%26revisionDate%3d1583485440000%26fromSF%3dY&company=SAP","user_id":"66287","instant":"2023-05-02T13:47:15.000Z"}
+,
+{"id":"114","source_uri":"https://sap.sharepoint.com","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx?ga=1#dora-sap","user_id":"66343","instant":"2023-05-02T13:59:44.000Z"}
+,
+{"id":"115","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/","user_id":"66343","instant":"2023-05-02T13:59:45.000Z"}
+,
+{"id":"122","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://www.devops-research.com/research.html#reports","user_id":"65072","instant":"2023-05-02T14:07:39.000Z"}
+,
+{"id":"123","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://octopus.com/blog/dora-metrics-devops-business-outcomes","user_id":"65072","instant":"2023-05-02T14:11:01.000Z"}
+,
+{"id":"124","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance","user_id":"65072","instant":"2023-05-02T14:11:36.000Z"}
+,
+{"id":"125","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://octopus.com/blog/dora-metrics-devops-business-outcomes","user_id":"65072","instant":"2023-05-02T14:11:36.000Z"}
+,
+{"id":"126","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://www.devops-research.com/research.html#reports","user_id":"65072","instant":"2023-05-02T14:18:03.000Z"}
+,
+{"id":"127","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://www.devops-research.com/research.html#reports","user_id":"65072","instant":"2023-05-02T14:20:35.000Z"}
+,
+{"id":"128","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://www.devops-research.com/research.html#reports","user_id":"66366","instant":"2023-05-02T14:25:32.000Z"}
+,
+{"id":"129","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://pages.github.tools.sap/agile/methods/","user_id":"66383","instant":"2023-05-02T17:43:29.000Z"}
+,
+{"id":"130","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://teams.microsoft.com/l/channel/19:5272745437f34447889dd11b2da64324%40thread.tacv2/DORA?groupId=e3cb44ac-9838-4e6e-abd3-5fb99a130bbc&tenantId=42f7676c-f455-423c-82f6-dc2d99791af7","user_id":"66399","instant":"2023-05-02T19:21:17.000Z"}
+,
+{"id":"131","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#learn","user_id":"66418","instant":"2023-05-02T20:55:30.000Z"}
+,
+{"id":"132","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/lead_time_for_changes/","user_id":"66435","instant":"2023-05-03T02:50:45.000Z"}
+,
+{"id":"133","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://app.pluralsight.com/score/skill-assessment/agile-practitioner/intro?context=skills#/v2/landing","user_id":"66483","instant":"2023-05-03T07:22:34.000Z"}
+,
+{"id":"134","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"66435","instant":"2023-05-03T07:27:43.000Z"}
+,
+{"id":"135","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/cloud-microservices/intro-java/","user_id":"66554","instant":"2023-05-03T08:29:49.000Z"}
+,
+{"id":"136","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/cloud-microservices/intro-java/","user_id":"66554","instant":"2023-05-03T08:34:31.000Z"}
+,
+{"id":"142","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/_layouts/15/sharepoint.aspx","user_id":"66608","instant":"2023-05-03T10:06:36.000Z"}
+,
+{"id":"143","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/lead_time_for_changes/","user_id":"66620","instant":"2023-05-03T11:36:43.000Z"}
+,
+{"id":"144","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"66620","instant":"2023-05-03T11:36:51.000Z"}
+,
+{"id":"145","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3DITEM_DETAILS%26componentID%3DDEV_SCRUM_1706%26componentTypeID%3DCOURSE%26revisionDate%3D1536665760000%26fromSF%3DY&company=SAP","user_id":"66639","instant":"2023-05-03T13:03:03.000Z"}
+,
+{"id":"146","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://app.pluralsight.com/library/courses/devops-big-picture-2021/table-of-contents","user_id":"66646","instant":"2023-05-03T13:25:14.000Z"}
+,
+{"id":"147","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://app.pluralsight.com/library/courses/devops-big-picture-2021/table-of-contents","user_id":"66646","instant":"2023-05-03T13:26:11.000Z"}
+,
+{"id":"148","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://app.pluralsight.com/library/courses/devops-big-picture-2021/table-of-contents","user_id":"66646","instant":"2023-05-03T13:26:51.000Z"}
+,
+{"id":"149","source_uri":"https://sap.sharepoint.com","target_uri":"https://app.pluralsight.com/library/courses/devops-big-picture-2021/table-of-contents","user_id":"66672","instant":"2023-05-03T15:08:03.000Z"}
+,
+{"id":"150","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/cloud-microservices/intro-java/","user_id":"66672","instant":"2023-05-03T15:08:31.000Z"}
+,
+{"id":"151","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://app.pluralsight.com/score/skill-assessment/agile-practitioner/intro?context=skills#/v2/landing","user_id":"66697","instant":"2023-05-03T20:31:03.000Z"}
+,
+{"id":"152","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://app.pluralsight.com/library/courses/agile-fundamentals/table-of-contents","user_id":"66697","instant":"2023-05-03T20:33:23.000Z"}
+,
+{"id":"153","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://fiorilaunchpad.sap.com/sites#my-events&/ig=12368681","user_id":"66698","instant":"2023-05-03T20:34:18.000Z"}
+,
+{"id":"154","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://app.pluralsight.com/library/courses/devops-big-picture-2021/table-of-contents","user_id":"66698","instant":"2023-05-03T20:35:36.000Z"}
+,
+{"id":"155","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/cloud-microservices/intro-java/","user_id":"66698","instant":"2023-05-03T20:35:46.000Z"}
+,
+{"id":"156","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://teams.microsoft.com/l/channel/19:5272745437f34447889dd11b2da64324%40thread.tacv2/DORA?groupId=e3cb44ac-9838-4e6e-abd3-5fb99a130bbc&tenantId=42f7676c-f455-423c-82f6-dc2d99791af7","user_id":"66698","instant":"2023-05-03T20:45:49.000Z"}
+,
+{"id":"157","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://teams.microsoft.com/l/channel/19:5272745437f34447889dd11b2da64324%40thread.tacv2/DORA?groupId=e3cb44ac-9838-4e6e-abd3-5fb99a130bbc&tenantId=42f7676c-f455-423c-82f6-dc2d99791af7","user_id":"66698","instant":"2023-05-03T20:46:14.000Z"}
+,
+{"id":"158","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/","user_id":"66698","instant":"2023-05-03T20:47:32.000Z"}
+,
+{"id":"159","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#check-events","user_id":"66710","instant":"2023-05-03T22:57:33.000Z"}
+,
+{"id":"160","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#learn","user_id":"66710","instant":"2023-05-03T22:57:40.000Z"}
+,
+{"id":"162","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"66762","instant":"2023-05-04T07:35:58.000Z"}
+,
+{"id":"163","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://octopus.com/blog/dora-metrics-devops-business-outcomes","user_id":"66763","instant":"2023-05-04T07:38:14.000Z"}
+,
+{"id":"165","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://app.pluralsight.com/library/courses/agile-fundamentals/table-of-contents","user_id":"66903","instant":"2023-05-04T14:05:56.000Z"}
+,
+{"id":"166","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Scale-Agile-SAFely--Check-the-Agile-at-Scale-Course!.aspx","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3dITEM_DETAILS%26componentID%3dDEV_00002273_WBT%26componentTypeID%3dCOURSE%26revisionDate%3d1671441964000%26fromSF%3dY&company=SAP","user_id":"66915","instant":"2023-05-04T16:08:02.000Z"}
+,
+{"id":"167","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile-Fundamentals-for-Leaders---News.aspx","target_uri":"https://fiorilaunchpad.sap.com/sites#my-events&/updateEvent/12253199","user_id":"66915","instant":"2023-05-04T16:09:28.000Z"}
+,
+{"id":"168","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#community","user_id":"66915","instant":"2023-05-04T16:10:01.000Z"}
+,
+{"id":"169","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://teams.microsoft.com/l/channel/19:7b267a618a3444bc96a4e9aa878617d9%40thread.tacv2/agile?groupId=458547d6-b263-43d7-a41b-8b3446b1a55f&tenantId=42f7676c-f455-423c-82f6-dc2d99791af7","user_id":"66915","instant":"2023-05-04T16:10:17.000Z"}
+,
+{"id":"170","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Collection_Agile-at-Scale-for-Beginners.aspx","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3DITEM_DETAILS%26componentID%3DDEV_00002074_WBT%26componentTypeID%3DCOURSE%26revisionDate%3D1666096391000%26fromSF%3DY&company=SAP","user_id":"66915","instant":"2023-05-04T16:10:51.000Z"}
+,
+{"id":"171","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#learn","user_id":"66950","instant":"2023-05-05T04:14:00.000Z"}
+,
+{"id":"172","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://www.devops-research.com/research.html","user_id":"66959","instant":"2023-05-05T05:52:17.000Z"}
+,
+{"id":"173","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/cloud-microservices/intro-java/","user_id":"66968","instant":"2023-05-05T06:43:11.000Z"}
+,
+{"id":"174","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/cloud-microservices/intro-java/","user_id":"66975","instant":"2023-05-05T07:07:26.000Z"}
+,
+{"id":"175","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#check-events","user_id":"67012","instant":"2023-05-05T09:17:14.000Z"}
+,
+{"id":"176","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile-Fundamentals-for-Leaders---News.aspx","user_id":"67021","instant":"2023-05-05T09:46:34.000Z"}
+,
+{"id":"177","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3DITEM_DETAILS%26componentID%3DDEV_PPO_PA_1912_ILT%26componentTypeID%3DCOURSE%26revisionDate%3D1586949000000%26fromSF%3DY&company=SAP","user_id":"67093","instant":"2023-05-05T14:54:52.000Z"}
+,
+{"id":"178","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#check-events","user_id":"67101","instant":"2023-05-05T16:08:42.000Z"}
+,
+{"id":"179","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3DITEM_DETAILS%26componentID%3DDEV_SCRUM_1706%26componentTypeID%3DCOURSE%26revisionDate%3D1536665760000%26fromSF%3DY&company=SAP","user_id":"67174","instant":"2023-05-07T10:06:22.000Z"}
+,
+{"id":"180","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://pages.github.tools.sap/agile/methods/","user_id":"67174","instant":"2023-05-07T10:08:57.000Z"}
+,
+{"id":"181","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#learn","user_id":"67289","instant":"2023-05-08T06:38:01.000Z"}
+,
+{"id":"182","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://video.sap.com/media/t/1_4uf1trbk","user_id":"67289","instant":"2023-05-08T06:38:14.000Z"}
+,
+{"id":"183","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3dITEM_DETAILS%26componentID%3dDEV_ASEABAPWS-WTC_1610%26componentTypeID%3dCOURSE%26revisionDate%3d1476268860000%26fromSF%3dY&company=SAP","user_id":"67289","instant":"2023-05-08T06:38:23.000Z"}
+,
+{"id":"184","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://app.pluralsight.com/library/courses/devops-big-picture-2021/table-of-contents","user_id":"67302","instant":"2023-05-08T07:18:07.000Z"}
+,
+{"id":"185","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"67336","instant":"2023-05-08T08:27:36.000Z"}
+,
+{"id":"186","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/lead_time_for_changes/","user_id":"67336","instant":"2023-05-08T08:28:37.000Z"}
+,
+{"id":"187","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"http://www.sap.com/","user_id":"67409","instant":"2023-05-08T11:27:49.000Z"}
+,
+{"id":"188","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/ase-mindset/testing-overview-java/","user_id":"67491","instant":"2023-05-08T14:49:04.000Z"}
+,
+{"id":"189","source_uri":"https://sap.sharepoint.com","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Cloud-Engineering-%26-DevOps.aspx","user_id":"66672","instant":"2023-05-08T15:17:43.000Z"}
+,
+{"id":"190","source_uri":"https://sap.sharepoint.com","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/unused/canary-deployment/","user_id":"66672","instant":"2023-05-08T15:18:23.000Z"}
+,
+{"id":"191","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://fiorilaunchpad.sap.com/sites#my-events&/ig=12368681","user_id":"67494","instant":"2023-05-08T15:25:55.000Z"}
+,
+{"id":"192","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://app.pluralsight.com/library/courses/cloud-native-architecture-big-picture/table-of-contents","user_id":"67549","instant":"2023-05-09T01:35:16.000Z"}
+,
+{"id":"193","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://services.google.com/fh/files/misc/state-of-devops-2019.pdf","user_id":"67566","instant":"2023-05-09T05:01:39.000Z"}
+,
+{"id":"194","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://www.devops-research.com/research.html#reports","user_id":"67566","instant":"2023-05-09T05:01:41.000Z"}
+,
+{"id":"195","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3dITEM_DETAILS%26componentID%3dDEV_ASE4-UI5AppDev%2b_1601%26componentTypeID%3dCOURSE%26revisionDate%3d1453194540000%26fromSF%3dY&company=SAP","user_id":"67571","instant":"2023-05-09T05:58:23.000Z"}
+,
+{"id":"196","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3dITEM_DETAILS%26componentID%3dDEV_ASE4-UI5AppDev%2b_1601%26componentTypeID%3dCOURSE%26revisionDate%3d1453194540000%26fromSF%3dY&company=SAP","user_id":"67571","instant":"2023-05-09T06:06:39.000Z"}
+,
+{"id":"197","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.plateau.com/learning/user/deeplink.do?OWASP_CSRFTOKEN=VU12-QR0T-E69A-KXIT-XBD2-60U4-MALY-7K9E&linkId=ITEM_DETAILS&componentID=DEV_LEAD2AGILITY_1704&componentTypeID=COURSE&fromSF=Y&revisionDate=1537968540000#/5504925F52B5E3B4E10000000A763C7A","user_id":"67571","instant":"2023-05-09T06:07:21.000Z"}
+,
+{"id":"198","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/unused/canary-deployment/","user_id":"67603","instant":"2023-05-09T07:50:39.000Z"}
+,
+{"id":"199","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://app.pluralsight.com/library/courses/agile-fundamentals/table-of-contents","user_id":"67615","instant":"2023-05-09T08:11:52.000Z"}
+,
+{"id":"200","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/logging/java/","user_id":"67649","instant":"2023-05-09T09:28:27.000Z"}
+,
+{"id":"201","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#learn","user_id":"67675","instant":"2023-05-09T11:12:48.000Z"}
+,
+{"id":"202","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://teams.microsoft.com/l/channel/19:5272745437f34447889dd11b2da64324%40thread.tacv2/DORA?groupId=e3cb44ac-9838-4e6e-abd3-5fb99a130bbc&tenantId=42f7676c-f455-423c-82f6-dc2d99791af7","user_id":"67692","instant":"2023-05-09T12:11:25.000Z"}
+,
+{"id":"203","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://sap.sharepoint.com/_layouts/15/sharepoint.aspx","user_id":"67705","instant":"2023-05-09T12:49:21.000Z"}
+,
+{"id":"204","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx?ga=1#learning-offerings-related-to-dora-metrics","user_id":"67705","instant":"2023-05-09T12:49:59.000Z"}
+,
+{"id":"205","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/cloud-microservices/intro-java/","user_id":"67739","instant":"2023-05-09T14:38:09.000Z"}
+,
+{"id":"206","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/logging/java/","user_id":"67755","instant":"2023-05-09T16:06:23.000Z"}
+,
+{"id":"207","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"67755","instant":"2023-05-09T16:19:21.000Z"}
+,
+{"id":"212","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#check-events","user_id":"67783","instant":"2023-05-09T23:33:46.000Z"}
+,
+{"id":"213","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.plateau.com/learning/user/learning/program/viewProgramDetails.do?OWASP_CSRFTOKEN=X80F-JLPV-JCII-8DED-1I73-SCBD-GHC1-G4BF&fromSF=Y&programID=DEV_Scrum_PA_ASE_1509&menuGroup=Learning&menuItem=Cur&fromDeepLink=true&hideProgramDetailsBackLink=true","user_id":"67801","instant":"2023-05-10T05:28:01.000Z"}
+,
+{"id":"214","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://app.pluralsight.com/sso/sap?returnUrl=library/courses/agile-fundamentals/table-of-contents","user_id":"67801","instant":"2023-05-10T05:28:05.000Z"}
+,
+{"id":"215","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3DITEM_DETAILS%26componentID%3DDEV_SCRUM_1706%26componentTypeID%3DCOURSE%26revisionDate%3D1536665760000%26fromSF%3DY&company=SAP","user_id":"67801","instant":"2023-05-10T05:28:22.000Z"}
+,
+{"id":"216","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://www.devops-research.com/research.html","user_id":"67755","instant":"2023-05-10T07:56:21.000Z"}
+,
+{"id":"217","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/unused/canary-deployment/","user_id":"67844","instant":"2023-05-10T08:06:21.000Z"}
+,
+{"id":"218","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/decouple-services/","user_id":"67844","instant":"2023-05-10T08:08:33.000Z"}
+,
+{"id":"219","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://app.pluralsight.com/library/courses/cloud-native-architecture-big-picture/table-of-contents","user_id":"67844","instant":"2023-05-10T08:08:56.000Z"}
+,
+{"id":"220","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://app.pluralsight.com/library/courses/cloud-native-architecture-big-picture/table-of-contents","user_id":"67844","instant":"2023-05-10T08:09:05.000Z"}
+,
+{"id":"221","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://app.pluralsight.com/library/courses/devops-big-picture-2021/table-of-contents","user_id":"67844","instant":"2023-05-10T08:09:22.000Z"}
+,
+{"id":"222","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"67755","instant":"2023-05-10T08:49:09.000Z"}
+,
+{"id":"223","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/change_failure_rate/","user_id":"67755","instant":"2023-05-10T08:55:20.000Z"}
+,
+{"id":"224","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/","user_id":"67755","instant":"2023-05-10T08:59:14.000Z"}
+,
+{"id":"225","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Architecture_Landing_Page.aspx","target_uri":"https://app.pluralsight.com/sso/sap?returnUrl=/library/courses/cloud-native-architecture-big-picture/","user_id":"67409","instant":"2023-05-10T09:18:52.000Z"}
+,
+{"id":"226","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/change_failure_rate/","user_id":"66762","instant":"2023-05-10T09:19:54.000Z"}
+,
+{"id":"227","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/time_to_restore/","user_id":"66762","instant":"2023-05-10T09:21:46.000Z"}
+,
+{"id":"228","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/change_failure_rate/","user_id":"66762","instant":"2023-05-10T09:21:51.000Z"}
+,
+{"id":"229","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/change_failure_rate/","user_id":"66762","instant":"2023-05-10T09:25:33.000Z"}
+,
+{"id":"230","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/time_to_restore/","user_id":"66762","instant":"2023-05-10T09:25:35.000Z"}
+,
+{"id":"231","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/lead_time_for_changes/","user_id":"66762","instant":"2023-05-10T09:25:39.000Z"}
+,
+{"id":"232","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"66762","instant":"2023-05-10T09:25:47.000Z"}
+,
+{"id":"233","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/change_failure_rate/","user_id":"66762","instant":"2023-05-10T09:25:55.000Z"}
+,
+{"id":"234","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/time_to_restore/","user_id":"66762","instant":"2023-05-10T09:26:06.000Z"}
+,
+{"id":"235","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://cloud.google.com/architecture/devops/devops-culture-transform","user_id":"67863","instant":"2023-05-10T09:31:04.000Z"}
+,
+{"id":"236","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"67864","instant":"2023-05-10T09:38:55.000Z"}
+,
+{"id":"237","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Cloud-Engineering-&-DevOps.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Cloud-Engineering-%26-DevOps.aspx#join-communities","user_id":"67864","instant":"2023-05-10T09:42:07.000Z"}
+,
+{"id":"238","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/lead_time_for_changes/","user_id":"65816","instant":"2023-05-10T11:29:36.000Z"}
+,
+{"id":"239","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"65816","instant":"2023-05-10T11:29:36.000Z"}
+,
+{"id":"240","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/lead_time_for_changes/","user_id":"67965","instant":"2023-05-10T14:07:40.000Z"}
+,
+{"id":"241","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"67965","instant":"2023-05-10T14:08:07.000Z"}
+,
+{"id":"242","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://teams.microsoft.com/l/channel/19:5272745437f34447889dd11b2da64324%40thread.tacv2/DORA?groupId=e3cb44ac-9838-4e6e-abd3-5fb99a130bbc&tenantId=42f7676c-f455-423c-82f6-dc2d99791af7","user_id":"67864","instant":"2023-05-10T16:57:06.000Z"}
+,
+{"id":"243","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://pages.github.tools.sap/agile/methods/agile-education.html","user_id":"67990","instant":"2023-05-10T17:59:53.000Z"}
+,
+{"id":"244","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/release-toggles/","user_id":"67864","instant":"2023-05-10T18:04:23.000Z"}
+,
+{"id":"245","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/resilience/","user_id":"67864","instant":"2023-05-10T18:04:50.000Z"}
+,
+{"id":"246","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/distributed-logging/kubernetes-java/","user_id":"67864","instant":"2023-05-10T18:20:02.000Z"}
+,
+{"id":"247","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://www.devops-research.com/research.html","user_id":"67755","instant":"2023-05-10T19:42:58.000Z"}
+,
+{"id":"248","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/cloud-microservices/intro-java/","user_id":"67755","instant":"2023-05-10T19:47:31.000Z"}
+,
+{"id":"249","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://teams.microsoft.com/l/channel/19:5272745437f34447889dd11b2da64324%40thread.tacv2/DORA?groupId=e3cb44ac-9838-4e6e-abd3-5fb99a130bbc&tenantId=42f7676c-f455-423c-82f6-dc2d99791af7","user_id":"67755","instant":"2023-05-10T20:10:13.000Z"}
+,
+{"id":"250","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"67755","instant":"2023-05-10T20:37:13.000Z"}
+,
+{"id":"251","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"67755","instant":"2023-05-10T20:37:17.000Z"}
+,
+{"id":"252","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://services.google.com/fh/files/misc/state-of-devops-2019.pdf","user_id":"67755","instant":"2023-05-10T20:38:44.000Z"}
+,
+{"id":"253","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://www.devops-research.com/research.html#reports","user_id":"67755","instant":"2023-05-10T20:38:45.000Z"}
+,
+{"id":"254","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/lead_time_for_changes/","user_id":"67755","instant":"2023-05-10T20:47:54.000Z"}
+,
+{"id":"255","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://app.pluralsight.com/library/courses/cloud-native-architecture-big-picture/table-of-contents","user_id":"67755","instant":"2023-05-10T21:31:28.000Z"}
+,
+{"id":"256","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/cloud-microservices/intro-java/","user_id":"67755","instant":"2023-05-10T21:31:34.000Z"}
+,
+{"id":"257","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://app.pluralsight.com/library/courses/agile-fundamentals/table-of-contents","user_id":"68000","instant":"2023-05-11T01:24:31.000Z"}
+,
+{"id":"258","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3dITEM_DETAILS%26componentID%3dLINKEDINLEARNING_60182%26componentTypeID%3dCOURSE%26revisionDate%3d1588267096000%26fromSF%3dY&company=SAP","user_id":"68000","instant":"2023-05-11T01:24:44.000Z"}
+,
+{"id":"262","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Translation_Landing_Page.aspx","target_uri":"https://lctr-sapitcloud.dispatcher.hana.ondemand.com/index.html#/learning-journey/DevL_Transl","user_id":"68104","instant":"2023-05-11T08:44:05.000Z"}
+,
+{"id":"263","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/","user_id":"67864","instant":"2023-05-11T08:49:04.000Z"}
+,
+{"id":"264","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Translation_Landing_Page.aspx","target_uri":"https://lctr-sapitcloud.dispatcher.hana.ondemand.com/index.html#/learning-journey/DevL_Transl","user_id":"68104","instant":"2023-05-11T08:50:13.000Z"}
+,
+{"id":"265","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#community","user_id":"68104","instant":"2023-05-11T08:53:21.000Z"}
+,
+{"id":"266","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://teams.microsoft.com/l/channel/19:7b267a618a3444bc96a4e9aa878617d9%40thread.tacv2/agile?groupId=458547d6-b263-43d7-a41b-8b3446b1a55f&tenantId=42f7676c-f455-423c-82f6-dc2d99791af7","user_id":"68104","instant":"2023-05-11T08:53:33.000Z"}
+,
+{"id":"267","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/","user_id":"67755","instant":"2023-05-11T09:09:41.000Z"}
+,
+{"id":"268","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/","user_id":"67755","instant":"2023-05-11T09:21:38.000Z"}
+,
+{"id":"269","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/zero-downtime-deployment/","user_id":"67755","instant":"2023-05-11T09:31:07.000Z"}
+,
+{"id":"270","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/","user_id":"66343","instant":"2023-05-11T09:31:11.000Z"}
+,
+{"id":"271","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/zero-downtime-deployment/","user_id":"68125","instant":"2023-05-11T09:44:17.000Z"}
+,
+{"id":"272","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/decouple-services/","user_id":"68125","instant":"2023-05-11T09:44:31.000Z"}
+,
+{"id":"273","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/_layouts/15/sharepoint.aspx","user_id":"68126","instant":"2023-05-11T09:45:43.000Z"}
+,
+{"id":"274","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/ase-mindset/testing-overview-java/","user_id":"68125","instant":"2023-05-11T09:45:56.000Z"}
+,
+{"id":"282","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx#what-is-dora","user_id":"65816","instant":"2023-05-11T11:51:46.000Z"}
+,
+{"id":"283","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/lead_time_for_changes/","user_id":"65816","instant":"2023-05-11T11:53:13.000Z"}
+,
+{"id":"284","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://fiorilaunchpad.sap.com/sites#my-events&/ig=12368681","user_id":"68155","instant":"2023-05-11T12:06:11.000Z"}
+,
+{"id":"285","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/","user_id":"68155","instant":"2023-05-11T12:07:30.000Z"}
+,
+{"id":"286","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://teams.microsoft.com/l/channel/19:5272745437f34447889dd11b2da64324%40thread.tacv2/DORA?groupId=e3cb44ac-9838-4e6e-abd3-5fb99a130bbc&tenantId=42f7676c-f455-423c-82f6-dc2d99791af7","user_id":"68155","instant":"2023-05-11T12:07:38.000Z"}
+,
+{"id":"287","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx?ga=1#learning-offerings-related-to-dora-metrics","user_id":"68157","instant":"2023-05-11T12:20:26.000Z"}
+,
+{"id":"288","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://app.pluralsight.com/library/courses/agile-fundamentals/table-of-contents","user_id":"68158","instant":"2023-05-11T12:20:35.000Z"}
+,
+{"id":"289","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://scrumguides.org/scrum-guide.html","user_id":"68158","instant":"2023-05-11T12:21:05.000Z"}
+,
+{"id":"290","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/","user_id":"68157","instant":"2023-05-11T12:21:10.000Z"}
+,
+{"id":"291","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://teams.microsoft.com/l/channel/19:5272745437f34447889dd11b2da64324%40thread.tacv2/DORA?groupId=e3cb44ac-9838-4e6e-abd3-5fb99a130bbc&tenantId=42f7676c-f455-423c-82f6-dc2d99791af7","user_id":"68157","instant":"2023-05-11T12:21:23.000Z"}
+,
+{"id":"292","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.plateau.com/learning/user/deeplink.do?OWASP_CSRFTOKEN=FI3E-UHHN-CP4X-PSM5-UO6V-GVW5-CGY8-91J9&linkId=PROGRAM_DETAILS&fromSF=Y&programID=DEV_Scrum_PA_ASE_1509","user_id":"68158","instant":"2023-05-11T12:22:13.000Z"}
+,
+{"id":"293","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/release-toggles/","user_id":"68159","instant":"2023-05-11T12:24:50.000Z"}
+,
+{"id":"294","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/decouple-services/","user_id":"68159","instant":"2023-05-11T12:25:06.000Z"}
+,
+{"id":"295","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/","user_id":"68155","instant":"2023-05-11T12:29:26.000Z"}
+,
+{"id":"296","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/cloud-microservices/intro-java/","user_id":"68159","instant":"2023-05-11T12:51:51.000Z"}
+,
+{"id":"297","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/continuous-delivery/azure-devops-java/","user_id":"68159","instant":"2023-05-11T12:52:39.000Z"}
+,
+{"id":"298","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/zero-downtime-deployment/","user_id":"68159","instant":"2023-05-11T12:53:25.000Z"}
+,
+{"id":"299","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Still-Open-Seats-In-SAP-Standard-Scrum-Courses.aspx","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3DSCHEDULED_OFFERING_DETAILS%26scheduleID%3D306044%26fromSF%3DY&company=SAP","user_id":"68164","instant":"2023-05-11T12:56:38.000Z"}
+,
+{"id":"300","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/release-toggles/","user_id":"68159","instant":"2023-05-11T12:57:09.000Z"}
+,
+{"id":"301","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/release-toggles/","user_id":"68159","instant":"2023-05-11T12:59:55.000Z"}
+,
+{"id":"302","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/ase-mindset/testing-overview-java/","user_id":"68159","instant":"2023-05-11T13:00:08.000Z"}
+,
+{"id":"303","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://www.devops-research.com/research.html","user_id":"68196","instant":"2023-05-11T16:44:34.000Z"}
+,
+{"id":"304","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://www.devops-research.com/research.html#reports","user_id":"68217","instant":"2023-05-11T19:10:40.000Z"}
+,
+{"id":"305","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#learn","user_id":"68242","instant":"2023-05-12T00:57:02.000Z"}
+,
+{"id":"306","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Scale-Agile-SAFely--Check-the-Agile-at-Scale-Course!.aspx","user_id":"68242","instant":"2023-05-12T00:59:00.000Z"}
+,
+{"id":"307","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/release-toggles/","user_id":"68243","instant":"2023-05-12T01:02:21.000Z"}
+,
+{"id":"308","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/distributed-logging/cloud-foundry-java/","user_id":"68244","instant":"2023-05-12T01:02:29.000Z"}
+,
+{"id":"309","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Collection_Dev-Skills-Essentials.aspx","target_uri":"https://app.pluralsight.com/sso/sap?returnUrl=score/skill-assessment/agile-practitioner/intro?context=skills#/v2/landing","user_id":"68242","instant":"2023-05-12T01:04:06.000Z"}
+,
+{"id":"310","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Collection_Dev-Skills-Essentials.aspx","target_uri":"https://app.pluralsight.com/sso/sap?returnUrl=library/courses/agile-fundamentals/table-of-contents","user_id":"68242","instant":"2023-05-12T01:18:33.000Z"}
+,
+{"id":"311","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Collection_SPEAK_Skills.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Collection_SPEAK_Skills.aspx#how-does-your-skill-level-relate-1","user_id":"68242","instant":"2023-05-12T01:22:42.000Z"}
+,
+{"id":"312","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Collection_SPEAK_Skills.aspx","target_uri":"https://sap.sharepoint.com/:b:/r/sites/126802/Shared%20Documents/Skills%20and%20SPEAK%20Documents/Skills_Averages_Per_Job_Family_and_Learning_Recommendations_vs04.pdf?csf=1&web=1&e=BVAA0t","user_id":"68242","instant":"2023-05-12T01:22:50.000Z"}
+,
+{"id":"313","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3dITEM_DETAILS%26componentID%3dLINKEDINLEARNING_47549%26componentTypeID%3dCOURSE%26revisionDate%3d1581530138000%26fromSF%3dY&company=SAP","user_id":"68158","instant":"2023-05-12T02:24:14.000Z"}
+,
+{"id":"314","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.plateau.com/learning/user/deeplink.do?OWASP_CSRFTOKEN=FI3E-UHHN-CP4X-PSM5-UO6V-GVW5-CGY8-91J9&linkId=PROGRAM_DETAILS&fromSF=Y&programID=DEV_Scrum_PA_ASE_1509","user_id":"68158","instant":"2023-05-12T02:24:47.000Z"}
+,
+{"id":"315","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/","user_id":"68263","instant":"2023-05-12T05:36:06.000Z"}
+,
+{"id":"316","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://app.pluralsight.com/score/skill-assessment/agile-practitioner/intro?context=skills#/v2/landing","user_id":"68278","instant":"2023-05-12T06:53:31.000Z"}
+,
+{"id":"317","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/cloud-microservices/intro-java/","user_id":"66975","instant":"2023-05-12T07:43:04.000Z"}
+,
+{"id":"318","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Cloud-Engineering-%26-DevOps.aspx","user_id":"68295","instant":"2023-05-12T07:52:47.000Z"}
+,
+{"id":"319","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/continuous-delivery/azure-devops-java/","user_id":"66975","instant":"2023-05-12T08:20:30.000Z"}
+,
+{"id":"320","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/continuous-delivery/azure-devops-java/","user_id":"66975","instant":"2023-05-12T08:57:03.000Z"}
+,
+{"id":"321","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/zero-downtime-deployment/","user_id":"66975","instant":"2023-05-12T08:57:20.000Z"}
+,
+{"id":"322","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/release-toggles/","user_id":"66975","instant":"2023-05-12T08:58:04.000Z"}
+,
+{"id":"323","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/decouple-services/","user_id":"66975","instant":"2023-05-12T08:58:11.000Z"}
+,
+{"id":"324","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/continuous-delivery/azure-devops-java/","user_id":"66975","instant":"2023-05-12T08:58:23.000Z"}
+,
+{"id":"325","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Curricula---Overview.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/cloud-native-developer-journey/","user_id":"68314","instant":"2023-05-12T09:00:39.000Z"}
+,
+{"id":"326","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/resilience/","user_id":"68125","instant":"2023-05-12T09:53:10.000Z"}
+,
+{"id":"327","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/resilience/","user_id":"68125","instant":"2023-05-12T10:20:46.000Z"}
+,
+{"id":"328","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#get-help","user_id":"68362","instant":"2023-05-12T10:59:19.000Z"}
+,
+{"id":"329","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Curricula---Overview.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/cloud-native-developer-journey/","user_id":"68403","instant":"2023-05-12T13:38:07.000Z"}
+,
+{"id":"330","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Cloud-Engineering-%26-DevOps.aspx?ga=1","user_id":"68459","instant":"2023-05-12T21:01:16.000Z"}
+,
+{"id":"331","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3DITEM_DETAILS%26componentID%3DDEV_SCRUM_1706%26componentTypeID%3DCOURSE%26revisionDate%3D1536665760000%26fromSF%3DY&company=SAP","user_id":"68459","instant":"2023-05-12T21:03:09.000Z"}
+,
+{"id":"332","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://pages.github.tools.sap/agile/methods/","user_id":"68459","instant":"2023-05-12T21:03:20.000Z"}
+,
+{"id":"333","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://app.pluralsight.com/paths/skill/practicing-scaled-agile","user_id":"68459","instant":"2023-05-12T21:03:21.000Z"}
+,
+{"id":"334","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://app.pluralsight.com/library/courses/devops-big-picture-2021/table-of-contents","user_id":"68530","instant":"2023-05-15T04:10:18.000Z"}
+,
+{"id":"335","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://services.google.com/fh/files/misc/state-of-devops-2019.pdf","user_id":"68536","instant":"2023-05-15T04:50:26.000Z"}
+,
+{"id":"336","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://www.devops-research.com/research.html#reports","user_id":"68537","instant":"2023-05-15T04:50:26.000Z"}
+,
+{"id":"337","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/change_failure_rate/","user_id":"68567","instant":"2023-05-15T07:44:37.000Z"}
+,
+{"id":"338","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Cloud-Engineering-&-DevOps.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Cloud-Engineering-%26-DevOps.aspx?Mode=Edit#get-help","user_id":"68588","instant":"2023-05-15T08:45:49.000Z"}
+,
+{"id":"339","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/ase-mindset/testing-overview-java/","user_id":"66975","instant":"2023-05-15T09:57:09.000Z"}
+,
+{"id":"340","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/_layouts/15/sharepoint.aspx","user_id":"68646","instant":"2023-05-15T11:34:46.000Z"}
+,
+{"id":"341","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#learn","user_id":"68696","instant":"2023-05-15T13:00:38.000Z"}
+,
+{"id":"342","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Artificial-Intelligence-&-Data-Science.aspx","target_uri":"https://app.pluralsight.com/library/courses/chatgpt-generative-ai-big-picture/table-of-contents","user_id":"67409","instant":"2023-05-15T13:07:38.000Z"}
+,
+{"id":"343","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://teams.microsoft.com/l/channel/19:5272745437f34447889dd11b2da64324%40thread.tacv2/DORA?groupId=e3cb44ac-9838-4e6e-abd3-5fb99a130bbc&tenantId=42f7676c-f455-423c-82f6-dc2d99791af7","user_id":"68779","instant":"2023-05-15T18:30:43.000Z"}
+,
+{"id":"344","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://www.devops-research.com/research.html#reports","user_id":"68792","instant":"2023-05-16T00:53:03.000Z"}
+,
+{"id":"345","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"68792","instant":"2023-05-16T00:54:49.000Z"}
+,
+{"id":"346","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://fiorilaunchpad.sap.com/sites#my-events&/ig=12368681","user_id":"68792","instant":"2023-05-16T00:57:37.000Z"}
+,
+{"id":"347","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"http://www.sap.com/","user_id":"68809","instant":"2023-05-16T04:39:44.000Z"}
+,
+{"id":"348","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Cloud-Engineering-&-DevOps.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Cloud-Engineering-%26-DevOps.aspx#learn","user_id":"68823","instant":"2023-05-16T05:32:52.000Z"}
+,
+{"id":"349","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/lead_time_for_changes/","user_id":"68937","instant":"2023-05-16T10:20:45.000Z"}
+,
+{"id":"350","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/boot-restart/challenges/release-toggles/","user_id":"68937","instant":"2023-05-16T10:35:05.000Z"}
+,
+{"id":"351","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#learn","user_id":"68950","instant":"2023-05-16T11:02:07.000Z"}
+,
+{"id":"352","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/","user_id":"68982","instant":"2023-05-16T12:43:07.000Z"}
+,
+{"id":"353","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/time_to_restore/","user_id":"68992","instant":"2023-05-16T13:23:20.000Z"}
+,
+{"id":"354","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Architecture_Landing_Page.aspx","target_uri":"https://lctr-sapitcloud.dispatcher.hana.ondemand.com/index.html#/learning-journey/DevL_Performance","user_id":"69020","instant":"2023-05-16T15:26:19.000Z"}
+,
+{"id":"355","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Architecture_Landing_Page.aspx","target_uri":"https://lctr-sapitcloud.dispatcher.hana.ondemand.com/index.html#/learning-journey/DevL_Performance","user_id":"69020","instant":"2023-05-16T15:28:42.000Z"}
+,
+{"id":"356","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Architecture_Landing_Page.aspx","target_uri":"https://lctr-sapitcloud.dispatcher.hana.ondemand.com/index.html#/learning-journey/DevL_ProStan","user_id":"69020","instant":"2023-05-16T15:29:33.000Z"}
+,
+{"id":"357","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://app.pluralsight.com/paths/skill/practicing-scaled-agile","user_id":"69031","instant":"2023-05-16T15:43:04.000Z"}
+,
+{"id":"358","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.plateau.com/learning/user/deeplink.do?OWASP_CSRFTOKEN=VU12-QR0T-E69A-KXIT-XBD2-60U4-MALY-7K9E&linkId=ITEM_DETAILS&componentID=DEV_8000500002_EN_WBT&componentTypeID=COURSE&fromSF=Y&revisionDate=1584024240000#/84516A5E104A9755E10000000A763C7A","user_id":"69031","instant":"2023-05-16T15:43:26.000Z"}
+,
+{"id":"359","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://pages.github.tools.sap/EngineeringCulture/ase/","user_id":"69031","instant":"2023-05-16T15:43:33.000Z"}
+,
+{"id":"360","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://app.pluralsight.com/library/courses/cloud-native-architecture-big-picture/table-of-contents","user_id":"69055","instant":"2023-05-17T02:36:06.000Z"}
+,
+{"id":"361","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/cloud-microservices/intro-java/","user_id":"69058","instant":"2023-05-17T02:49:25.000Z"}
+,
+{"id":"362","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/continuous-delivery/azure-devops-java/","user_id":"69060","instant":"2023-05-17T02:49:43.000Z"}
+,
+{"id":"363","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://services.google.com/fh/files/misc/state-of-devops-2019.pdf","user_id":"69074","instant":"2023-05-17T04:38:54.000Z"}
+,
+{"id":"364","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"69074","instant":"2023-05-17T04:39:29.000Z"}
+,
+{"id":"365","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/ase-mindset/testing-overview-java/","user_id":"69077","instant":"2023-05-17T05:17:53.000Z"}
+,
+{"id":"366","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"69074","instant":"2023-05-17T05:20:26.000Z"}
+,
+{"id":"367","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://fiorilaunchpad.sap.com/sites#my-events&/ig=12368681","user_id":"69080","instant":"2023-05-17T05:21:30.000Z"}
+,
+{"id":"368","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://www.devops-research.com/research.html","user_id":"69082","instant":"2023-05-17T05:31:52.000Z"}
+,
+{"id":"369","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/distributed-logging/kubernetes-java/","user_id":"69082","instant":"2023-05-17T05:39:18.000Z"}
+,
+{"id":"370","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://www.devops-research.com/research.html","user_id":"69097","instant":"2023-05-17T06:27:34.000Z"}
+,
+{"id":"371","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://services.google.com/fh/files/misc/state-of-devops-2019.pdf","user_id":"69108","instant":"2023-05-17T06:56:34.000Z"}
+,
+{"id":"372","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://www.devops-research.com/research.html","user_id":"69108","instant":"2023-05-17T06:56:45.000Z"}
+,
+{"id":"373","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://app.pluralsight.com/library/courses/devops-big-picture-2021/table-of-contents","user_id":"69108","instant":"2023-05-17T06:58:29.000Z"}
+,
+{"id":"374","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://sap.sharepoint.com/_layouts/15/sharepoint.aspx","user_id":"69074","instant":"2023-05-17T07:03:25.000Z"}
+,
+{"id":"375","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://fiorilaunchpad.sap.com/sites#my-events&/ig=12368681","user_id":"69117","instant":"2023-05-17T07:21:18.000Z"}
+,
+{"id":"376","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"69138","instant":"2023-05-17T07:50:45.000Z"}
+,
+{"id":"377","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/distributed-logging/kubernetes-java/","user_id":"69179","instant":"2023-05-17T09:30:00.000Z"}
+,
+{"id":"378","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#check-events","user_id":"69185","instant":"2023-05-17T09:42:16.000Z"}
+,
+{"id":"379","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#learn","user_id":"69185","instant":"2023-05-17T09:42:23.000Z"}
+,
+{"id":"380","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Cloud-Engineering-%26-DevOps.aspx","user_id":"68295","instant":"2023-05-17T10:09:17.000Z"}
+,
+{"id":"382","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Collection_Agile-at-Scale-for-Beginners.aspx","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3DITEM_DETAILS%26componentID%3DDEV_00001289_WBT%26componentTypeID%3DCOURSE%26revisionDate%3D1652431006000%26fromSF%3DY&company=SAP","user_id":"69250","instant":"2023-05-17T12:34:07.000Z"}
+,
+{"id":"383","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#learn","user_id":"69020","instant":"2023-05-17T12:34:39.000Z"}
+,
+{"id":"384","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/lead_time_for_changes/","user_id":"69275","instant":"2023-05-17T13:26:03.000Z"}
+,
+{"id":"385","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","user_id":"68295","instant":"2023-05-17T14:08:31.000Z"}
+,
+{"id":"386","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#check-events","user_id":"69305","instant":"2023-05-17T15:06:11.000Z"}
+,
+{"id":"387","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Still-Open-Seats-In-SAP-Standard-Scrum-Courses.aspx","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3DSCHEDULED_OFFERING_DETAILS%26scheduleID%3D306044%26fromSF%3DY&company=SAP","user_id":"69305","instant":"2023-05-17T15:11:47.000Z"}
+,
+{"id":"388","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Still-Open-Seats-In-SAP-Standard-Scrum-Courses.aspx","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3DSCHEDULED_OFFERING_DETAILS%26scheduleID%3D306357%26fromSF%3DY&company=SAP","user_id":"69305","instant":"2023-05-17T15:11:56.000Z"}
+,
+{"id":"389","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#learn","user_id":"69305","instant":"2023-05-17T15:14:23.000Z"}
+,
+{"id":"390","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://app.pluralsight.com/library/courses/agile-fundamentals/table-of-contents","user_id":"69305","instant":"2023-05-17T15:14:35.000Z"}
+,
+{"id":"391","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3DITEM_DETAILS%26componentID%3DDEV_00002947_ILT%26componentTypeID%3DCOURSE%26revisionDate%3D1683810846000%26fromSF%3DY&company=SAP","user_id":"69305","instant":"2023-05-17T15:14:41.000Z"}
+,
+{"id":"392","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.plateau.com/learning/user/deeplink.do?OWASP_CSRFTOKEN=VU12-QR0T-E69A-KXIT-XBD2-60U4-MALY-7K9E&linkId=ITEM_DETAILS&componentID=DEV_00002074_WBT&componentTypeID=COURSE&fromSF=Y&revisionDate=1666096391000#/8707EFBEF5690E371800FB02DD6E2226","user_id":"69305","instant":"2023-05-17T15:16:19.000Z"}
+,
+{"id":"393","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx#check-events","user_id":"69344","instant":"2023-05-17T21:04:45.000Z"}
+,
+{"id":"394","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://scrumguides.org/scrum-guide.html","user_id":"69347","instant":"2023-05-17T23:36:26.000Z"}
+,
+{"id":"395","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/cloud-microservices/intro-java/","user_id":"69379","instant":"2023-05-18T05:30:03.000Z"}
+,
+{"id":"402","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://cloud.google.com/architecture/devops/devops-culture-transform","user_id":"69402","instant":"2023-05-18T06:55:52.000Z"}
+,
+{"id":"403","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/continuous-delivery/azure-devops-java/","user_id":"69402","instant":"2023-05-18T07:02:15.000Z"}
+,
+{"id":"404","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/deployment_frequency/","user_id":"69108","instant":"2023-05-18T07:57:52.000Z"}
+,
+{"id":"405","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/cloud-curriculum/materials/cloud-microservices/intro-java/","user_id":"69379","instant":"2023-05-18T09:47:51.000Z"}
+,
+{"id":"406","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://app.pluralsight.com/library/courses/agile-fundamentals/table-of-contents","user_id":"69442","instant":"2023-05-18T15:23:31.000Z"}
+,
+{"id":"407","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://app.pluralsight.com/library/courses/agile-fundamentals/table-of-contents","user_id":"69442","instant":"2023-05-18T15:25:55.000Z"}
+,
+{"id":"408","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Still-Open-Seats-In-SAP-Standard-Scrum-Courses.aspx","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3DSCHEDULED_OFFERING_DETAILS%26scheduleID%3D306357%26fromSF%3DY&company=SAP","user_id":"69444","instant":"2023-05-18T15:55:01.000Z"}
+,
+{"id":"409","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://app.pluralsight.com/library/courses/agile-fundamentals/table-of-contents","user_id":"69442","instant":"2023-05-18T16:17:24.000Z"}
+,
+{"id":"410","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https://sap.plateau.com/learning/user/deeplink_redirect.jsp?linkId%3dITEM_DETAILS%26componentID%3dLINKEDINLEARNING_47549%26componentTypeID%3dCOURSE%26revisionDate%3d1581530138000%26fromSF%3dY&company=SAP","user_id":"69442","instant":"2023-05-18T16:19:18.000Z"}
+,
+{"id":"411","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.plateau.com/learning/user/learning/program/viewProgramDetails.do?OWASP_CSRFTOKEN=X80F-JLPV-JCII-8DED-1I73-SCBD-GHC1-G4BF&fromSF=Y&programID=DEV_Scrum_PA_ASE_1509&menuGroup=Learning&menuItem=Cur&fromDeepLink=true&hideProgramDetailsBackLink=true","user_id":"69464","instant":"2023-05-19T01:00:37.000Z"}
+,
+{"id":"412","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://app.pluralsight.com/library/courses/agile-fundamentals/table-of-contents","user_id":"69464","instant":"2023-05-19T01:04:37.000Z"}
+,
+{"id":"413","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/DORA.aspx","target_uri":"https://pages.github.tools.sap/hyperspace/DevOps-Insights/02_getting_started/kpis/lead_time_for_changes/","user_id":"69074","instant":"2023-05-19T03:39:18.000Z"}
+,
+{"id":"414","source_uri":"https://sap.sharepoint.com/sites/126802/SitePages/Agile.aspx","target_uri":"https://sap.sharepoint.com/_layouts/15/sharepoint.aspx","user_id":"69506","instant":"2023-05-19T08:43:03.000Z"}
 ]

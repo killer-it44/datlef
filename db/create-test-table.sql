@@ -1,6 +1,7 @@
-create table if not exists "analytics" (
-   "sourceUri" varchar(2048) not null,
-   "targetUri" varchar(2048) not null,
-   "userId" bigint not null,
-   "timestamp" timestamp not null
+create table if not exists "click" (
+   id serial not null,
+   source_uri varchar(2048) not null,
+   target_uri varchar(2048) not null,
+   user_id bigint not null,
+   instant timestamp not null
 );
