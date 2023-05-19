@@ -36,6 +36,19 @@ FROM click
     ORDER BY week`
     },
     {
+        'name': 'total clicks vs. unique users per week',
+        'sql': `SELECT 
+    concat(
+        date_part('year', instant::date), 
+        date_part('week', instant::date)
+    ) AS week,
+    count(*) AS clicks, 
+    count(DISTINCT user_id) AS "unique users" 
+FROM click 
+    GROUP BY week
+    ORDER BY week`
+    },
+    {
         'name': 'unique clicks per week',
         'sql': `SELECT 
     concat(
