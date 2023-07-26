@@ -8,6 +8,13 @@
         </select>
         <input id='showHideQueryDetails' type='checkbox' onclick='showHideQueryDetails()'>Show Details</button>
         <a id='download' style='display: none;'>Download CSV</a>
+        <input id='showTableStructure' type='checkbox' onclick='showTableStructure()'>Show Table Structure</button>
+        <div id="tableDetails" style="display: none;">
+            <select id='tables' onchange='selectTable()'>
+                <option value=''>-Select Table-</option>
+            </select>
+            <div id="tableInfo"></div>
+        </div>
 
         <div id='queryDetails' style='display: none;'>
             <textarea id='sql' style='width: 40vw; height: 12em;'>
@@ -24,6 +31,41 @@
     <script src='queries.js'></script>
 
     <script>
+        const showTableStructure = async () => {
+            const response = await fetch(`/api/query.json?sql=SELECT * FROM pg_catalog.pg_tables `) 
+            // where schemaname like 'public'
+            const tableData = await response.json()
+            const tables = document.getElementById('tables')
+            tableData.forEach(t => {
+                const option = document.createElement('option')
+                option.value = t.tablename
+                option.innerHTML = t.tablename
+                tables.appendChild(option)
+            })
+            document.getElementById('tableDetails').style = document.getElementById('showTableStructure').checked
+                ? 'display: flex; flex-direction: column; position: absolute; top: 2em;'
+                : 'display: none;'
+        }
+
+        const selectTable = async () => {
+            const tables = document.getElementById('tables')
+            const selectedTable = tables.value
+            if (document.getElementById('showTableStructure').checked) {
+                const sql = `select column_name, data_type, character_maximum_length
+    from INFORMATION_SCHEMA.COLUMNS where table_name ='${selectedTable}';`
+                const response = await fetch(`/api/query.json?sql=${sql}`)
+                const data = await response.json()
+                let ret = "<table><tr><td>column name</td><td>data type</td><td>maximum length</td></tr>"
+                data.forEach(column => {
+                    ret += "<tr><td>" + column.column_name + "</td>"
+                    ret += "<td>" + column.data_type + "</td>"
+                    ret += "<td>" + column.character_maximum_length + "</td></tr>"
+                })
+                ret += "</table>"
+                document.getElementById('tableInfo').innerHTML = ret
+            }
+        }
+
         const showHideQueryDetails = () => {
             document.getElementById('queryDetails').style = document.getElementById('showHideQueryDetails').checked
                 ? 'display: flex; flex-direction: column; position: absolute; top: 2em;'
