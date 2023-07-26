@@ -106,7 +106,7 @@
         const query = async () => {
             const downloadLink = document.getElementById('download')
             downloadLink.style = 'display: none;'
-            const sql = document.getElementById('sql').value
+            const sql = encodeURIComponent(document.getElementById('sql').value)
             const response = await fetch(`/api/query.json?sql=${sql}`)
             if (response.ok) {
                 data = await response.json()
