@@ -33,6 +33,26 @@ class App {
             })
         })
 
+        app.get('/api/queries', express.json(), async (req, res) => {
+            res.json((await pool.query('SELECT queryname, sql FROM datlef.queries ORDER BY queryname')).rows)
+        })
+
+        app.put('/api/queries/:queryname', express.json(), async (req, res, next) => {
+            try {
+                const result = await pool.query(`INSERT INTO datlef.queries (queryname, owner, sql) VALUES ($1, $2, $3)
+                    ON CONFLICT (queryname) DO UPDATE
+                        SET sql = $3 WHERE datlef.queries.queryname = $1 AND datlef.queries.owner = $2`,
+                    [req.params.queryname, req.body.owner, req.body.sql])
+                if (result.rowCount === 0) {
+                    next(new Error('Query could not be saved. The name already exists, but the owner does not match.'))
+                } else {
+                    res.status(201).send('Query saved.')
+                }
+            } catch (error) {
+                next(error)
+            }
+        })
+
         app.use((err, req, res, next) => {
             // See ExpressJS documentation, if headers are already sent, we should leave it to Express default handler
             if (res.headersSent) {

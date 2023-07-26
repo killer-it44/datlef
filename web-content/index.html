@@ -4,7 +4,6 @@
 <body>
     <div>
         <select id='queries' onchange='selectQuery()'>
-            <option value=''>-Select Query-</option>
         </select>
         <input id='showHideQueryDetails' type='checkbox' onclick='showHideQueryDetails()'>Show Details</button>
         <a id='download' style='display: none;'>Download CSV</a>
@@ -19,7 +18,13 @@
         <div id='queryDetails' style='display: none;'>
             <textarea id='sql' style='width: 40vw; height: 12em;'>
             </textarea>
-            <button onclick='query()'>Go</button>
+            <div style='display: flex; width: 40vw;'>
+                <button onclick='query()' style='width: 10vw;' >Go</button>
+                <input id='queryname' style='width: 15vw;' placeholder='query name' value=''/>
+                <input id='owner' style='width: 5vw;' placeholder='owner' value=''/>
+                <button onclick='save()' style='width: 5vw;'>Save</button>
+                <button onclick='del()' style='width: 5vw;'>Delete</button>
+            </div>
             <textarea id='data' style='width: 40vw; height: 12em;'>
             </textarea>
         </div>
@@ -28,7 +33,6 @@
         </div>
     </div>
     <script src='https://cdn.jsdelivr.net/npm/chart.js'></script>
-    <script src='queries.js'></script>
 
     <script>
         const showTableStructure = async () => {
@@ -65,6 +69,7 @@
                 document.getElementById('tableInfo').innerHTML = ret
             }
         }
+        let queries
 
         const showHideQueryDetails = () => {
             document.getElementById('queryDetails').style = document.getElementById('showHideQueryDetails').checked
@@ -72,17 +77,26 @@
                 : 'display: none;'
         }
 
-        const queryList = document.getElementById('queries')
-        queries.forEach(q => {
+        const addQuery = (value, text) => {
+            const queryList = document.getElementById('queries')
             const option = document.createElement('option')
-            option.value = q.name
-            option.innerHTML = q.name
+            option.value = value
+            option.innerHTML = text
             queryList.appendChild(option)
-        })
+        }
+
+        const loadQueries = async () => {
+            queries = (await (await fetch('/api/queries')).json())
+            const queryList = document.getElementById('queries')
+            queryList.innerHTML = ''
+            addQuery('', '-Select Query-')
+            queries.forEach(q => addQuery(q.queryname, q.queryname))
+        }
 
         const selectQuery = async (evt) => {
-            const name = document.getElementById('queries').value
-            document.getElementById('sql').value = queries.find(q => q.name === name).sql
+            const queryname = document.getElementById('queries').value
+            document.getElementById('sql').value = queries.find(q => q.queryname === queryname).sql
+            document.getElementById('queryname').value = document.getElementById('queries').value
             query()
         }
 
@@ -118,6 +132,23 @@
             }
         }
 
+        const save = async () => {
+            const response = await fetch(`/api/queries/${document.getElementById('queryname').value}`, {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    owner: document.getElementById('owner').value,
+                    sql: document.getElementById('sql').value
+                })
+            })
+            document.getElementById('data').innerHTML = await response.text()
+            if (response.ok) loadQueries()
+        }
+
+        const del = async () => {
+            alert('not yet implemented. reach out to your trusted admin.')
+        }
+
         const renderChart = () => {
             chart = new Chart(document.getElementById('chart'), {
                 type: 'line',
@@ -125,6 +156,7 @@
             })
         }
 
+        loadQueries()
         renderChart()
     </script>
 </body>
