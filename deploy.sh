@@ -1,6 +1,6 @@
 #!/bin/sh -e
-cf delete -f datlef-old
 cf target -o UsageTrackerAndFeedbackApps -s usage-tracker-production
+cf delete -f datlef-old
 cf push datlef-new --no-start
 cf map-route datlef-new internal.cfapps.sap.hana.ondemand.com --hostname cloud-native-dev-usage-tracker-analytics
 cf set-env datlef-new READONLY_DB_URL "$READONLY_DB_URL"
