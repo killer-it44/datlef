@@ -36,7 +36,14 @@
 
     <script>
         const showTableStructure = async () => {
-            const response = await fetch(`/api/query.json?sql=SELECT * FROM pg_catalog.pg_tables `) 
+            const sql = `SELECT * FROM pg_catalog.pg_tables 
+                WHERE schemaname <> 'pg_catalog'
+                AND schemaname <> 'information_schema'
+                AND schemaname <> 'datlef'
+                AND tablename <> 'databasechangelog'
+                AND tablename <> 'databasechangeloglock'
+            `
+            const response = await fetch(`/api/query.json?sql=${sql}`) 
             // where schemaname like 'public'
             const tableData = await response.json()
             const tables = document.getElementById('tables')
