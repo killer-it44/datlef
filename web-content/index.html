@@ -46,6 +46,7 @@
             const response = await fetch(`/api/query.json?sql=${encodeURIComponent(sql)}`) 
             const tableData = await response.json()
             const tables = document.getElementById('tables')
+            tables.innerHTML = ''
             tableData.forEach(t => {
                 const option = document.createElement('option')
                 option.value = t.tablename
