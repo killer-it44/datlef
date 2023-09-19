@@ -9,8 +9,7 @@
         <a id='download' style='display: none;'>Download CSV</a>
         <input id='showTableStructure' type='checkbox' onclick='showTableStructure()'>Show Table Structure</button>
         <div id="tableDetails" style="display: none;">
-            <select id='tables' onchange='selectTable()'>
-                <option value=''>-Select Table-</option>
+            <select id='tables' onchange='selectTable()'>                
             </select>
             <div id="tableInfo"></div>
         </div>
@@ -47,6 +46,11 @@
             const tableData = await response.json()
             const tables = document.getElementById('tables')
             tables.innerHTML = ''
+            const placeholder = document.createElement('option')
+            placeholder.value = ''
+            placeholder.innerHTML = '-Select Table-'
+            tables.appendChild(option)
+
             tableData.forEach(t => {
                 const option = document.createElement('option')
                 option.value = t.tablename
