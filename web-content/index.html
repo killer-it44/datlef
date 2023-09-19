@@ -43,8 +43,7 @@
                 AND tablename <> 'databasechangelog'
                 AND tablename <> 'databasechangeloglock'
             `
-            const response = await fetch(`/api/query.json?sql=${sql}`) 
-            // where schemaname like 'public'
+            const response = await fetch(`/api/query.json?sql=${encodeURIComponent(sql)}`) 
             const tableData = await response.json()
             const tables = document.getElementById('tables')
             tableData.forEach(t => {
