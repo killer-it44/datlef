@@ -6,9 +6,9 @@ Your best friend for data crunching.
 
 To setup:
 1. `npm ci` to install the required libs
-1. `npm run dev-db:start` to start a local test db
-1. `npm run dev-db:init` to populate the local test db with some data
-1. `npm run start:dev`
+1. `npm run dev-db:run` to start a local dev db
+1. `npm run dev-db:init-test-data` to populate the local dev db with some test data
+1. `npm run start:dev` to start the server
 1. Open browser at http://localhost:3000
 
 ## Approach
