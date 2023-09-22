@@ -157,7 +157,18 @@
         }
 
         const del = async () => {
-            alert('not yet implemented. reach out to your trusted admin.')
+            const response = await fetch(`/api/queries/${document.getElementById('queryname').value}`, {
+                method: 'DELETE',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    owner: document.getElementById('owner').value
+                })
+            })
+            document.getElementById('data').innerHTML = await response.text()
+            document.getElementById('queryname').value = ''
+            document.getElementById('sql').value = ''
+            document.getElementById('owner').value = ''
+            if (response.ok) loadQueries()
         }
 
         const renderChart = () => {

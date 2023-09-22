@@ -53,6 +53,21 @@ class App {
             }
         })
 
+        app.delete('/api/queries/:queryname', express.json(), async (req, res, next) => {
+            try {
+                const result = await pool.query(`DELETE FROM datlef.queries
+                    WHERE datlef.queries.queryname = $1 AND datlef.queries.owner = $2`,
+                    [req.params.queryname, req.body.owner])
+                if (result.rowCount === 0) {
+                    next(new Error('Query could not be deleted. Check if the owner and queryname are correct.'))
+                } else {
+                    res.status(200).send('Query deleted.')
+                }
+            } catch (error) {
+                next(error)
+            }
+        })
+
         app.use((err, req, res, next) => {
             // See ExpressJS documentation, if headers are already sent, we should leave it to Express default handler
             if (res.headersSent) {
