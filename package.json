@@ -4,9 +4,10 @@
   "description": "",
   "scripts": {
     "start": "node main.js",
-    "start:dev": "source local.profile && node main-cf.js",
+    "start:dev": "source local.profile && node main.js",
     "dev-db:run": "docker run --rm -p 5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust postgres:alpine",
-    "dev-db:init-test-data": "node db/init-test-db.js"
+    "dev-db:init-test-data": "node test-data/init-test-data.js",
+    "migrate": "node -e 'import(`./migrate.js`).then(m => m.default(process.argv[1]));' $@"
   },
   "type": "module",
   "keywords": [],
