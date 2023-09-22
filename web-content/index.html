@@ -97,11 +97,19 @@
         }
 
         const loadQueries = async () => {
-            queries = (await (await fetch('/api/queries')).json())
-            const queryList = document.getElementById('queries')
-            queryList.innerHTML = ''
-            addQuery('', '-Select Query-')
-            queries.forEach(q => addQuery(q.queryname, q.queryname))
+            try {
+                document.getElementById('queries').innerHTML = ''
+                const response = await fetch('/api/queries')
+                if (!response.ok) {
+                    throw new Error(await response.text())
+                }
+                queries = await response.json()
+                addQuery('', '-Select Query-')
+                queries.forEach(q => addQuery(q.queryname, q.queryname))
+            } catch (e) {
+                console.error(e)
+                addQuery('', 'COULD NOT LOAD QUERIES')
+            }
         }
 
         const selectQuery = async (evt) => {
