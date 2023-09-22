@@ -1,0 +1,11 @@
+These queries can be used on the prod instance to get data from the most recent 100 users:
+
+select * from user_table order by id desc limit 100
+
+select * from click 
+where user_id in (select id as user_id from user_table order by id desc limit 100)
+
+select * from page
+
+select * from pagehit 
+where user_id in (select id as user_id from user_table order by id desc limit 100)
