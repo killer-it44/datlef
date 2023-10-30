@@ -8,5 +8,5 @@ const dbCreds = cfenv.getAppEnv().getServiceCreds('postgres-usage-tracker')
 const ssl = dbCreds.sslcert ? { cert: dbCreds.sslcert, ca: dbCreds.sslrootcert } : undefined
 
 // START APP WITH READONLY DB USER
-const connectionString = dbCreds.uri.replace(/:\/\/.*:.*@/u, '://process.env.READONLY_DB_USER@')
+const connectionString = dbCreds.uri.replace(/:\/\/.*:.*@/u, `://${process.env.READONLY_DB_USER}@`)
 new App().run({ httpServerPort: process.env.PORT, db: { connectionString, ssl } })
