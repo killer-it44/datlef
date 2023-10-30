@@ -33,6 +33,10 @@ class App {
             })
         })
 
+        app.get('/api/ai-assistant', express.json(), async (req, res, next) => {
+            // TODO: Implement AI interaction here, properly reading CF env to connect
+        })
+
         app.get('/api/queries', express.json(), async (req, res, next) => {
             try {
                 res.json((await pool.query('SELECT queryname, sql FROM datlef.queries ORDER BY queryname')).rows)
