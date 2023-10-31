@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html>
-
 <body>
-    <div>
-        <select id='queries' onchange='selectQuery()'>
-        </select>
-        <input id='showHideQueryDetails' type='checkbox' onclick='showHideQueryDetails()'>Show Details</button>
-        <a id='download' style='display: none;'>Download CSV</a>
-        <input id='showTableStructure' type='checkbox' onclick='showTableStructure()'>Show Table Structure</button>
-        <button id='tryAI' onclick='tryAI()'>Test AI</button>
-        <div id="tableDetails" style="display: none;">
-            <select id='tables' onchange='selectTable()'>                
-            </select>
-            <div id="tableInfo"></div>
-        </div>
-
-        <div id='queryDetails' style='display: none;'>
-            <textarea id='sql' style='width: 40vw; height: 12em;'>
-            </textarea>
-            <div style='display: flex; width: 40vw;'>
-                <button onclick='query()' style='width: 10vw;' >Go</button>
-                <input id='queryname' style='width: 15vw;' placeholder='query name' value=''/>
-                <input id='owner' style='width: 5vw;' placeholder='owner' value=''/>
-                <button onclick='save()' style='width: 5vw;'>Save</button>
-                <button onclick='del()' style='width: 5vw;'>Delete</button>
+    <div style='display: flex; height: 40rem;'>
+        <div id='main' style='width: fit-content; margin-right: 1rem;'>
+            <div id='header' style='width: 100%;'>
+                <select id='queries' onchange='selectQuery()'>
+                </select>
+                <input id='showHideQueryDetails' type='checkbox' onclick='showHideQueryDetails()'>Show Details</button>
+                <a id='download' style='display: none;'>Download CSV</a>
+                <input id='showTableStructure' type='checkbox' onclick='showTableStructure()'>Show Table Structure</button>
+                <input id='showAI' type='checkbox' onclick='showAI()'>Enable AI Assistant</button>
             </div>
-            <textarea id='data' style='width: 40vw; height: 12em;'>
-            </textarea>
-        </div>
-        <div>
+            <div id="tableDetails" style="display: none;">
+                <select id='tables' onchange='selectTable()'>                
+                </select>
+                <div id="tableInfo"></div>
+            </div>
+
+            <div id='queryDetails' style='display: none;'>
+                <textarea id='sql' style='width: 40vw; height: 12em;'>
+                </textarea>
+                <div style='display: flex; width: 40vw;'>
+                    <button onclick='query()' style='width: 10vw;' >Go</button>
+                    <input id='queryname' style='width: 15vw;' placeholder='query name' value=''/>
+                    <input id='owner' style='width: 5vw;' placeholder='owner' value=''/>
+                    <button onclick='save()' style='width: 5vw;'>Save</button>
+                    <button onclick='del()' style='width: 5vw;'>Delete</button>
+                </div>
+                <textarea id='data' style='width: 40vw; height: 12em;'>
+                </textarea>
+            </div>
             <canvas id='chart'></canvas>
         </div>
+        <div id='ai' style='display: none;'>
+            <span style='align-self: flex-start;'>Please describe your question about creating queries:</span>
+            <textarea id='ai-question' style='width: 100%; max-width: 100%; height: 100%; min-height: 30%; resize: none; flex-shrink: 5;'></textarea>
+            <button onclick='askAI()' style='width: 100%; align-self: end; padding: 0.5rem 1rem; background: #322182; color: white;'>Ask ChatGPT</button>
+            <p id='ai-answer' style='background: white; color: gray; width: 100%; min-height: 10%; overflow: scroll;'>No answer yet.</p>
+        </div>
     </div>
+
     <script src='https://cdn.jsdelivr.net/npm/chart.js'></script>
 
     <script>
@@ -40,7 +48,7 @@
             TODO 2. integrate on server aka fetch credentials from cf env insteaf of leaking credentials via hardcoding
             TODO 3. research how well GPT-3.5 supports SQL, or if we need GPT-4.0
         */
-        const tryAI = async () => {
+        const askAI = async () => {
             const authUrl = 'https://cc-refapp.authentication.sap.hana.ondemand.com'
             // REVISE: bad hardcoded credentials
             const clientId = 'sb-d994a982-c3d1-48de-8238-dd651802e078!b895|azure-openai-service-i057149-xs!b16730'
@@ -54,15 +62,26 @@
             })
 
             const body = await authResponse.json()
-
+            const question = document.getElementById('ai-question').value
             const response = await fetch('https://azure-openai-serv-i057149.cfapps.sap.hana.ondemand.com/api/v1/completions?deployment_id=gpt-35-turbo', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${body.access_token}` },
-                body: JSON.stringify({ deployment_id: 'gpt-35-turbo', messages: [{'role': 'user', 'content': 'how is the weather today?'}] })
+                body: JSON.stringify({ deployment_id: 'gpt-35-turbo', messages: [{'role': 'user', 'content': question}] })
             })
-            alert(await response.json().choices[0].messages.content)
+            
+            document.getElementById('ai-answer').innerHTML = ''
+            const result = await response.json()
+            console.log(result)
+            result.choices.forEach(choice => {
+                document.getElementById('ai-answer').innerHTML += choice.message.content
+            })
         }
 
+        const showAI = async () => {
+            document.getElementById('ai').style = document.getElementById('showAI').checked
+                ? 'display: flex; flex-direction: column; align-items: center; width: 20%; background-color: #efefef; padding: 0.5rem 1rem; gap: 0.5rem;'
+                : 'display: none;'
+        }
 
         const showTableStructure = async () => {
             const sql = `SELECT * FROM pg_catalog.pg_tables 
