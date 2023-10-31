@@ -39,7 +39,7 @@ class App {
 
         app.get('/api/queries', express.json(), async (req, res, next) => {
             try {
-                res.json((await pool.query('SELECT queryname, sql FROM datlef.queries ORDER BY queryname')).rows)
+                res.json((await pool.query('SELECT * FROM datlef.queries ORDER BY queryname')).rows)
             } catch (e) {
                 next(e)
             }
