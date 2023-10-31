@@ -1,54 +1,42 @@
 <!DOCTYPE html>
 <html>
-<body>
-    <div style='display: flex; height: 40rem;'>
-        <div id='main' style='width: fit-content; margin-right: 1rem;'>
-            <div id='header' style='width: 100%;'>
-                <select id='queries' onchange='selectQuery()'>
-                </select>
-                <input id='showHideQueryDetails' type='checkbox' onclick='showHideQueryDetails()'>Show Details</button>
-                <a id='download' style='display: none;'>Download CSV</a>
-                <input id='showTableStructure' type='checkbox' onclick='showTableStructure()'>Show Table Structure</button>
-                <input id='showAI' type='checkbox' onclick='showAI()'>Enable AI Assistant</button>
-            </div>
-            <div id="tableDetails" style="display: none;">
-                <select id='tables' onchange='selectTable()'>                
-                </select>
-                <div id="tableInfo"></div>
-            </div>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style='margin: .5em;'>
+    <div id='header' style='height: 5vh;'>
+        <select id='queries' onchange='selectQuery()'>
+        </select>
+        <input id='showConsole' type='checkbox' onclick='toggleConsole()'>Console</button>
+    </div>
 
-            <div id='queryDetails' style='display: none;'>
-                <textarea id='sql' style='width: 40vw; height: 12em;'>
-                </textarea>
-                <div style='display: flex; width: 40vw;'>
-                    <button onclick='query()' style='width: 10vw;' >Go</button>
-                    <input id='queryname' style='width: 15vw;' placeholder='query name' value=''/>
-                    <input id='owner' style='width: 5vw;' placeholder='owner' value=''/>
-                    <button onclick='save()' style='width: 5vw;'>Save</button>
-                    <button onclick='del()' style='width: 5vw;'>Delete</button>
-                </div>
-                <textarea id='data' style='width: 40vw; height: 12em;'>
-                </textarea>
-            </div>
-            <canvas id='chart'></canvas>
+    <div id='console' style='display: none;'>
+        <textarea id='sql' style='height: 18em; resize: none;' placeholder='Enter your sql or describe what you want and click the AI button. Click the info button to see the data structures and get a basic query.' ></textarea>
+        <div style='display: flex;'>
+            <button onclick='ai()' title='Ask the AI assistant to suggest a query based on your instructions.'>🤖</button>
+            <button onclick='info()' title='Display information about the tables you can query. It will be displayed as a comment in the console, so you can just put your query above or below and copy/paste information.'>ℹ️</button>
+            <button onclick='run()' title='Run your query.'>▶️</button>
+
+            <input style='margin-left: auto;' id='queryname' placeholder='query name' value='' title='The name under which you want to save the query. If the query name already exists, it will be considered as an update and you need to match the owner name to make sure you are not accidentally overriding the query of someone else.'/>
+            <input id='owner' placeholder='owner' value='' title='Control field to make sure you are not accidentally overriding the queries from other people. When the query name already exists, the owner needs to match, otherwise saving will be aborted. You can use whatever you want as owner, such as your name, user id, your topic, team name, etc.'/>
+            <button onclick='save()'>💾</button>
+            <button onclick='del()'>❌</button>
         </div>
-        <div id='ai' style='display: none;'>
-            <span style='align-self: flex-start;'>Please describe your question about creating queries:</span>
-            <textarea id='ai-question' style='width: 100%; max-width: 100%; height: 100%; min-height: 30%; resize: none; flex-shrink: 5;'></textarea>
-            <button onclick='askAI()' style='width: 100%; align-self: end; padding: 0.5rem 1rem; background: #322182; color: white;'>Ask ChatGPT</button>
-            <p id='ai-answer' style='background: white; color: gray; width: 100%; min-height: 10%; overflow: scroll;'>No answer yet.</p>
-        </div>
+    </div>
+
+    <div style='max-height: 70vh;'>
+        <canvas id='chart'></canvas>
+    </div>
+
+    <div style='height: 20vh; overflow-y: auto;'>
+        <a id='download' style='display: none;'>Download CSV</a>
+        <div id='result'></div>
     </div>
 
     <script src='https://cdn.jsdelivr.net/npm/chart.js'></script>
 
     <script>
-        /*
-            TODO 1. integrate it better on the UI
-            TODO 2. integrate on server aka fetch credentials from cf env insteaf of leaking credentials via hardcoding
-            TODO 3. research how well GPT-3.5 supports SQL, or if we need GPT-4.0
-        */
-        const askAI = async () => {
+        const ai = async () => {
             const authUrl = 'https://cc-refapp.authentication.sap.hana.ondemand.com'
             // REVISE: bad hardcoded credentials
             const clientId = 'sb-d994a982-c3d1-48de-8238-dd651802e078!b895|azure-openai-service-i057149-xs!b16730'
@@ -62,78 +50,57 @@
             })
 
             const body = await authResponse.json()
-            const question = document.getElementById('ai-question').value
+            const question = document.getElementById('sql').value
             const response = await fetch('https://azure-openai-serv-i057149.cfapps.sap.hana.ondemand.com/api/v1/completions?deployment_id=gpt-35-turbo', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${body.access_token}` },
-                body: JSON.stringify({ deployment_id: 'gpt-35-turbo', messages: [{'role': 'user', 'content': question}] })
+                body: JSON.stringify({ deployment_id: 'gpt-35-turbo', messages: [
+                    {'role': 'system', 'content': `You are an assistant for an analytics app that uses SQL. The database is postgres. You are given a question and you need to provide a SQL query that answers the question. The table schema is as follows: ${await getTableSchema()}`},
+                    // {'role': 'system', 'content': `You are an assistant for an analytics app that uses SQL. The database is postgres. You are given a question and you need to provide a SQL query that answers the question. The first column of your SQL should always be some kind of label, followed by one or more key figure columns to plot on the y-axis. The table schema is as follows: ${await getTableSchema()}`},
+                    {'role': 'user', 'content': question}]
+                })
             })
             
-            document.getElementById('ai-answer').innerHTML = ''
+            let aiResponse = document.getElementById('sql').value + '\n\n'
             const result = await response.json()
-            console.log(result)
             result.choices.forEach(choice => {
-                document.getElementById('ai-answer').innerHTML += choice.message.content
+                aiResponse += choice.message.content
             })
+            document.getElementById('sql').value = aiResponse
         }
 
         const showAI = async () => {
             document.getElementById('ai').style = document.getElementById('showAI').checked
-                ? 'display: flex; flex-direction: column; align-items: center; width: 20%; background-color: #efefef; padding: 0.5rem 1rem; gap: 0.5rem;'
+                ? 'position: absolute; top: 0; left: 40%; display: flex; flex-direction: column; align-items: center; width: 20%; background-color: #efefef; padding: 0.5rem 1rem; gap: 0.5rem;'
                 : 'display: none;'
         }
 
-        const showTableStructure = async () => {
-            const sql = `SELECT * FROM pg_catalog.pg_tables 
-                WHERE schemaname <> 'pg_catalog'
-                AND schemaname <> 'information_schema'
-                AND schemaname <> 'datlef'
-                AND tablename <> 'databasechangelog'
-                AND tablename <> 'databasechangeloglock'
-            `
-            const response = await fetch(`/api/query.json?sql=${encodeURIComponent(sql)}`) 
-            const tableData = await response.json()
-            const tables = document.getElementById('tables')
-            tables.innerHTML = ''
-            const placeholder = document.createElement('option')
-            placeholder.value = ''
-            placeholder.innerHTML = '-Select Table-'
-            tables.appendChild(placeholder)
-
-            tableData.forEach(t => {
-                const option = document.createElement('option')
-                option.value = t.tablename
-                option.innerHTML = t.tablename
-                tables.appendChild(option)
-            })
-            document.getElementById('tableDetails').style = document.getElementById('showTableStructure').checked
-                ? 'display: flex; flex-direction: column; position: absolute; top: 2em;'
-                : 'display: none;'
+        const info = async () => {
+            document.getElementById('sql').value = `/*${await getTableSchema()}*/`
         }
 
-        const selectTable = async () => {
-            const tables = document.getElementById('tables')
-            const selectedTable = tables.value
-            if (document.getElementById('showTableStructure').checked) {
-                const sql = `select column_name, data_type, character_maximum_length
-    from INFORMATION_SCHEMA.COLUMNS where table_name ='${selectedTable}';`
+        const getTableSchema = async () => {
+            const sql = `SELECT viewname FROM pg_catalog.pg_views WHERE schemaname = 'public'`
+            const response = await fetch(`/api/query.json?sql=${encodeURIComponent(sql)}`)
+            const views = await response.json()
+
+            let text = ''
+            for (view of views) {
+                const sql = `SELECT column_name, data_type
+                    FROM information_schema.columns WHERE table_schema = 'public' AND table_name ='${view.viewname}';`
                 const response = await fetch(`/api/query.json?sql=${sql}`)
-                const data = await response.json()
-                let ret = "<table><tr><td>column name</td><td>data type</td><td>maximum length</td></tr>"
-                data.forEach(column => {
-                    ret += "<tr><td>" + column.column_name + "</td>"
-                    ret += "<td>" + column.data_type + "</td>"
-                    ret += "<td>" + column.character_maximum_length + "</td></tr>"
-                })
-                ret += "</table>"
-                document.getElementById('tableInfo').innerHTML = ret
+                const columns = await response.json()
+                const columnsInfo = columns.map(c => '\t' + c.column_name + ': ' + c.data_type).join('\n')
+                text += `\n${view.viewname}:\n${columnsInfo}\n`
             }
+            return text
         }
+
         let queries
 
-        const showHideQueryDetails = () => {
-            document.getElementById('queryDetails').style = document.getElementById('showHideQueryDetails').checked
-                ? 'display: flex; flex-direction: column; position: absolute; top: 2em;'
+        const toggleConsole = () => {
+            document.getElementById('console').style = document.getElementById('showConsole').checked
+                ? 'display: flex; flex-direction: column; position: absolute; top: 2em; width: calc(100% - 1em);'
                 : 'display: none;'
         }
 
@@ -162,41 +129,55 @@
         }
 
         const selectQuery = async (evt) => {
-            const queryname = document.getElementById('queries').value
-            document.getElementById('sql').value = queries.find(q => q.queryname === queryname).sql
-            document.getElementById('queryname').value = document.getElementById('queries').value
-            query()
+            const query = queries.find(q => q.queryname === document.getElementById('queries').value)
+            document.getElementById('sql').value = query.sql
+            document.getElementById('queryname').value = query.queryname
+            document.getElementById('owner').placeholder = query.owner
+            run()
         }
 
         const colors = ['blue', 'green', 'red', 'magenta', 'cyan', 'orange', 'brown', 'purple', 'black']
         let data, labels = [], datasets, chart
 
-        const query = async () => {
+        const run = async () => {
             const downloadLink = document.getElementById('download')
             downloadLink.style = 'display: none;'
             const sql = encodeURIComponent(document.getElementById('sql').value)
             const response = await fetch(`/api/query.json?sql=${sql}`)
+            chart?.destroy()
             if (response.ok) {
                 data = await response.json()
-                const keys = Object.keys(data[0])
-                labels = data.map(record => record[keys[0]])
-                datasets = []
+                labels = [], datasets = []
+                if (data.length > 0) {
+                    const keys = Object.keys(data[0])
+                    labels = data.map(record => record[keys[0]])
 
-                for (let i = 1; i < keys.length; i++) {
-                    datasets.push({
-                        label: keys[i],
-                        data: data.map(record => record[keys[i]]),
-                        borderColor: colors[i - 1]
-                    })
+                    for (let i = 1; i < keys.length; i++) {
+                        datasets.push({
+                            label: keys[i],
+                            data: data.map(record => record[keys[i]]),
+                            borderColor: colors[i - 1]
+                        })
+                    }
+                    chart = new Chart(document.getElementById('chart'), { type: 'line', data: { labels, datasets } })
+
+                    const theaders = keys.map(key => `<th style='border: 1px solid;'>${key}</th>`).join('')
+                    const trows = data.map(record => `<tr>${keys.map(key => `<td style='border: 1px solid; word-break: break-all;'>${record[key]}</td>`).join('')}</tr>`).join('')
+                    document.getElementById('result').innerHTML = `<table style='width: 100%; border-collapse: collapse; table-layout: fixed;'>
+                        <thead><tr>${theaders}</tr></thead>
+                        <tbody>${trows}</tbody>
+                    </table>`
+
+                    downloadLink.style = ''
+                    downloadLink.href = `/api/query.csv?sql=${sql}`
+                } else {
+                    const ctx = document.getElementById('chart').getContext('2d')
+                    ctx.fillText('chart not available', 50, 50)
                 }
-
-                chart.destroy()
-                renderChart()
-                document.getElementById('data').innerHTML = JSON.stringify(data, null, '  ')
-                downloadLink.style = ''
-                downloadLink.href = `/api/query.csv?sql=${sql}`
             } else {
-                document.getElementById('data').innerHTML = await response.text()
+                document.getElementById('result').innerHTML = await response.text()
+                const ctx = document.getElementById('chart').getContext('2d')
+                ctx.fillText('chart not available', 50, 50)
             }
         }
 
@@ -228,15 +209,7 @@
             if (response.ok) loadQueries()
         }
 
-        const renderChart = () => {
-            chart = new Chart(document.getElementById('chart'), {
-                type: 'line',
-                data: { labels, datasets }
-            })
-        }
-
         loadQueries()
-        renderChart()
     </script>
 </body>
 
