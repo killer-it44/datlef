@@ -11,6 +11,6 @@ exports.up = async function (db) {
 }
 
 exports.down = async function (db) {
-    await db.runSql(`DROP VIEW views`)
-    await db.runSql(`DROP VIEW clicks`)
+    await db.runSql(`DROP VIEW views;`)
+    await db.runSql(`DROP VIEW clicks;`)
 }
