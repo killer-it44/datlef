@@ -33,8 +33,27 @@ class App {
             })
         })
 
-        app.get('/api/ai-assistant', express.json(), async (req, res, next) => {
-            // TODO: Implement AI interaction here, properly reading CF env to connect
+        app.post('/api/ai-assistant', express.json(), async (req, res) => {
+            const authUrl = 'https://cc-refapp.authentication.sap.hana.ondemand.com'
+            const clientId = config.ai.uaa.clientid
+            const clientSecret = config.ai.uaa.clientsecret
+            const authBody = { 'client_id': clientId, 'grant_type': 'client_credentials' }
+            const formBody = Object.keys(authBody).map(key => `${encodeURIComponent(key)}=${encodeURIComponent(authBody[key])}`).join('&')
+            const authResponse = await fetch(`${authUrl}/oauth/token`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'Authorization': `Basic ${btoa(clientId + ':' + clientSecret)}` },
+                body: formBody
+            })
+            const body = await authResponse.json()
+            const aiBaseUrl = config.ai.url
+            const response = await fetch(`${aiBaseUrl}/api/v1/completions?deployment_id=gpt-35-turbo`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${body.access_token}` },
+                body: JSON.stringify({ deployment_id: 'gpt-35-turbo', messages: req.body })
+            })
+
+            const answer = (await response.json()).choices.map(c => c.message.content).join('\n')
+            res.set('Content-Type', 'text/plain').send(answer)
         })
 
         app.get('/api/queries', express.json(), async (req, res, next) => {

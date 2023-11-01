@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='icon' href='datlef-small.png' type='image/png'>
     <title>Datlef - Your Best Friend for Data Crunching</title>
 </head>
+
 <body style='margin: .5em;'>
     <div id='header' style='height: 5vh;'>
         <select id='queries' onchange='selectQuery()'>
@@ -13,14 +15,19 @@
     </div>
 
     <div id='console' style='display: none;'>
-        <textarea id='sql' style='height: 18em; resize: none;' placeholder='Enter your sql or describe what you want and click the AI button. Click the info button to see the data structures and get a basic query.' ></textarea>
+        <textarea id='sql' style='height: 18em; resize: none;'
+            placeholder='Enter your sql or describe what you want and click the AI button. Click the info button to see the data structures and get a basic query.'></textarea>
         <div style='display: flex;'>
-            <button onclick='ai()' title='Ask the AI assistant to suggest a query based on your instructions.'>🤖</button>
-            <button onclick='info()' title='Display information about the tables you can query. It will be displayed as a comment in the console, so you can just put your query above or below and copy/paste information.'>ℹ️</button>
+            <button onclick='ai()'
+                title='Ask the AI assistant to suggest a query based on your instructions.'>🤖</button>
+            <button onclick='info()'
+                title='Display information about the tables you can query. It will be displayed as a comment in the console, so you can just put your query above or below and copy/paste information.'>ℹ️</button>
             <button onclick='run()' title='Run your query.'>▶️</button>
 
-            <input style='margin-left: auto;' id='queryname' placeholder='query name' value='' title='The name under which you want to save the query. If the query name already exists, it will be considered as an update and you need to match the owner name to make sure you are not accidentally overriding the query of someone else.'/>
-            <input id='owner' placeholder='owner' value='' title='Control field to make sure you are not accidentally overriding the queries from other people. When the query name already exists, the owner needs to match, otherwise saving will be aborted. You can use whatever you want as owner, such as your name, user id, your topic, team name, etc.'/>
+            <input style='margin-left: auto;' id='queryname' placeholder='query name' value=''
+                title='The name under which you want to save the query. If the query name already exists, it will be considered as an update and you need to match the owner name to make sure you are not accidentally overriding the query of someone else.' />
+            <input id='owner' placeholder='owner' value=''
+                title='Control field to make sure you are not accidentally overriding the queries from other people. When the query name already exists, the owner needs to match, otherwise saving will be aborted. You can use whatever you want as owner, such as your name, user id, your topic, team name, etc.' />
             <button onclick='save()'>💾</button>
             <button onclick='del()'>❌</button>
         </div>
@@ -39,36 +46,18 @@
 
     <script>
         const ai = async () => {
-            const authUrl = 'https://cc-refapp.authentication.sap.hana.ondemand.com'
-            // REVISE: bad hardcoded credentials
-            const clientId = 'sb-d994a982-c3d1-48de-8238-dd651802e078!b895|azure-openai-service-i057149-xs!b16730'
-            const clientSecret = '4443783a-1ae7-4334-a10d-9fd314b52aeb$nhCXV_IBE0B1doJSy3EiYgwzKhDDtVBhnY2uuxN_VE0='
-            const authBody = {'client_id': clientId, 'grant_type': 'client_credentials'}
-            const formBody = Object.keys(authBody).map(key => `${encodeURIComponent(key)}=${encodeURIComponent(authBody[key])}`).join('&')
-            const authResponse = await fetch(`${authUrl}/oauth/token`, {
+            const question = document.getElementById('sql').value
+            const response = await fetch('/api/ai-assistant', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'Authorization': `Basic ${btoa(clientId + ':' + clientSecret)}` },
-                body: formBody
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify([
+                    { 'role': 'system', 'content': `You are an assistant for an analytics app that uses SQL. The database is postgres. You are given a question and you need to provide a SQL query that answers the question. The table schema is as follows: ${await getTableSchema()}` },
+                    // {'role': 'system', 'content': `You are an assistant for an analytics app that uses SQL. The database is postgres. You are given a question and you need to provide a SQL query that answers the question. The first column of your SQL should always be some kind of label, followed by one or more key figure columns to plot on the y-axis. The table schema is as follows: ${await getTableSchema()}`},
+                    { 'role': 'user', 'content': question }
+                ])
             })
 
-            const body = await authResponse.json()
-            const question = document.getElementById('sql').value
-            const response = await fetch('https://azure-openai-serv-i057149.cfapps.sap.hana.ondemand.com/api/v1/completions?deployment_id=gpt-35-turbo', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${body.access_token}` },
-                body: JSON.stringify({ deployment_id: 'gpt-35-turbo', messages: [
-                    {'role': 'system', 'content': `You are an assistant for an analytics app that uses SQL. The database is postgres. You are given a question and you need to provide a SQL query that answers the question. The table schema is as follows: ${await getTableSchema()}`},
-                    // {'role': 'system', 'content': `You are an assistant for an analytics app that uses SQL. The database is postgres. You are given a question and you need to provide a SQL query that answers the question. The first column of your SQL should always be some kind of label, followed by one or more key figure columns to plot on the y-axis. The table schema is as follows: ${await getTableSchema()}`},
-                    {'role': 'user', 'content': question}]
-                })
-            })
-            
-            let aiResponse = document.getElementById('sql').value + '\n\n'
-            const result = await response.json()
-            result.choices.forEach(choice => {
-                aiResponse += choice.message.content
-            })
-            document.getElementById('sql').value = aiResponse
+            document.getElementById('sql').value += '\n\n' + (await response.text())
         }
 
         const showAI = async () => {
