@@ -1,26 +1,30 @@
 {
-  "name": "datlef",
-  "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "start": "node main.js",
-    "start:dev": "source local.profile && node main.js",
-    "dev-db:run": "docker run --rm -p 5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust postgres:alpine",
-    "dev-db:init-test-data": "node test-data/init-test-data.js",
-    "migrate": "node -e 'import(`./migrate.js`).then(m => m.default(process.argv[1]));' $@"
-  },
-  "type": "module",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "cfenv": "^1.2.4",
-    "csv": "^6.2.10",
-    "db-migrate": "^0.11.14",
-    "db-migrate-pg": "^1.5.2",
-    "express": "^4.18.2",
-    "JSONStream": "^1.3.5",
-    "pg": "^8.10.0",
-    "pg-query-stream": "^4.4.0"
-  }
+    "name": "datlef",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "start": "node main.js",
+        "start:dev": "source local.profile && node main.js",
+        "start:int": "source integration.profile && node main.js",
+        "dev-db:run": "docker run --rm -p 5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust postgres:alpine",
+        "dev-db:init-test-data": "node test-data/init-test-data.js",
+        "migrate": "node -e 'import(`./migrate.js`).then(m => m.default(process.argv[1]));' $@"
+    },
+    "type": "module",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cfenv": "^1.2.4",
+        "csv": "^6.2.10",
+        "db-migrate": "^0.11.14",
+        "db-migrate-pg": "^1.5.2",
+        "express": "^4.18.2",
+        "JSONStream": "^1.3.5",
+        "pg": "^8.10.0",
+        "pg-query-stream": "^4.4.0"
+    },
+    "engines": {
+        "node": "^20.3"
+    }
 }
