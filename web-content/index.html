@@ -39,8 +39,13 @@
 
     <script>
         const ai = async () => {
-            const question = document.getElementById('sql').value
-            const response = await fetch(`/api/ai-assistant?question=${question}&schema=${await getTableSchema()}`)
+            //const question = document.getElementById('sql').value
+            //const response = await fetch(`/api/ai-assistant?question=${question}&schema=${await getTableSchema()}`, {
+            const response = await fetch('/api/ai-assistant', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ question: document.getElementById('sql').value, schema: await getTableSchema() })
+            })
             
             let aiResponse = document.getElementById('sql').value + '\n\n'
             

@@ -34,7 +34,7 @@ class App {
             })
         })
 
-        app.get('/api/ai-assistant', express.json(), async (req, res, next) => {
+        app.post('/api/ai-assistant', express.json(), async (req, res, next) => {
             try {
                 const authUrl = ai.credentials.uaa.url
                 const clientId = ai.credentials.uaa.clientid
@@ -52,9 +52,9 @@ class App {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${body.access_token}` },
                     body: JSON.stringify({ deployment_id: 'gpt-35-turbo', messages: [
-                        {'role': 'system', 'content': `You are an assistant for an analytics app that uses SQL. The database is postgres. You are given a question and you need to provide a SQL query that answers the question. The table schema is as follows: ${req.query.schema}`}, 
+                        {'role': 'system', 'content': `You are an assistant for an analytics app that uses SQL. The database is postgres. You are given a question and you need to provide a SQL query that answers the question. The table schema is as follows: ${req.body.schema}`}, 
                         // {'role': 'system', 'content': `You are an assistant for an analytics app that uses SQL. The database is postgres. You are given a question and you need to provide a SQL query that answers the question. The first column of your SQL should always be some kind of label, followed by one or more key figure columns to plot on the y-axis. The table schema is as follows: ${await getTableSchema()}`},
-                        {'role': 'user', 'content': `${req.query.question}`}]
+                        {'role': 'user', 'content': `${req.body.question}`}]
                     })
                 })
                 
