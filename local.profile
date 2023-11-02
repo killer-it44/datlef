@@ -7,8 +7,8 @@ export VCAP_SERVICES='{
         "credentials":{
             "uaa": {
                 "url": "https://cc-refapp.authentication.sap.hana.ondemand.com",
-                "clientid":"sb-d994a982-c3d1-48de-8238-dd651802e078!b895|azure-openai-service-i057149-xs!b16730",
-                "clientsecret":"4443783a-1ae7-4334-a10d-9fd314b52aeb$nhCXV_IBE0B1doJSy3EiYgwzKhDDtVBhnY2uuxN_VE0="
+                "clientid":"<clientid>",
+                "clientsecret":"<clientsecret>"
             }
         },
         "url": "https://azure-openai-serv-i057149.cfapps.sap.hana.ondemand.com",
