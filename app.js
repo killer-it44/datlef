@@ -7,6 +7,7 @@ import JSONStream from 'JSONStream'
 class App {
     run(config) {
         const pool = new pg.Pool(config.db)
+        const ai = config.ai
         const app = express()
 
         app.use(express.static('web-content'))
@@ -34,7 +35,37 @@ class App {
         })
 
         app.get('/api/ai-assistant', express.json(), async (req, res, next) => {
-            // TODO: Implement AI interaction here, properly reading CF env to connect
+            try {
+                const authUrl = ai.credentials.uaa.url
+                const clientId = ai.credentials.uaa.clientid
+                const clientSecret = ai.credentials.uaa.clientsecret
+                const authBody = {'client_id': clientId, 'grant_type': 'client_credentials'}
+                const formBody = Object.keys(authBody).map(key => `${encodeURIComponent(key)}=${encodeURIComponent(authBody[key])}`).join('&')
+                const authResponse = await fetch(`${authUrl}/oauth/token`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'Authorization': `Basic ${btoa(clientId + ':' + clientSecret)}` },
+                    body: formBody
+                })
+                
+                const body = await authResponse.json()
+                const response = await fetch(`${ai.url}/api/v1/completions?deployment_id=gpt-35-turbo`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${body.access_token}` },
+                    body: JSON.stringify({ deployment_id: 'gpt-35-turbo', messages: [
+                        {'role': 'system', 'content': `You are an assistant for an analytics app that uses SQL. The database is postgres. You are given a question and you need to provide a SQL query that answers the question. The table schema is as follows: ${req.query.schema}`}, 
+                        // {'role': 'system', 'content': `You are an assistant for an analytics app that uses SQL. The database is postgres. You are given a question and you need to provide a SQL query that answers the question. The first column of your SQL should always be some kind of label, followed by one or more key figure columns to plot on the y-axis. The table schema is as follows: ${await getTableSchema()}`},
+                        {'role': 'user', 'content': `${req.query.question}`}]
+                    })
+                })
+                
+                const result = await response.json()
+                let message = ""
+                result.choices.forEach(choice => message += choice.message.content)
+                
+                res.status(200).send(message)
+            } catch (e) {
+                next(e)
+            }
         })
 
         app.get('/api/queries', express.json(), async (req, res, next) => {

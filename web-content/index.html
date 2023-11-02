@@ -39,36 +39,16 @@
 
     <script>
         const ai = async () => {
-            const authUrl = 'https://cc-refapp.authentication.sap.hana.ondemand.com'
-            // REVISE: bad hardcoded credentials
-            const clientId = 'sb-d994a982-c3d1-48de-8238-dd651802e078!b895|azure-openai-service-i057149-xs!b16730'
-            const clientSecret = '4443783a-1ae7-4334-a10d-9fd314b52aeb$nhCXV_IBE0B1doJSy3EiYgwzKhDDtVBhnY2uuxN_VE0='
-            const authBody = {'client_id': clientId, 'grant_type': 'client_credentials'}
-            const formBody = Object.keys(authBody).map(key => `${encodeURIComponent(key)}=${encodeURIComponent(authBody[key])}`).join('&')
-            const authResponse = await fetch(`${authUrl}/oauth/token`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'Authorization': `Basic ${btoa(clientId + ':' + clientSecret)}` },
-                body: formBody
-            })
-
-            const body = await authResponse.json()
             const question = document.getElementById('sql').value
-            const response = await fetch('https://azure-openai-serv-i057149.cfapps.sap.hana.ondemand.com/api/v1/completions?deployment_id=gpt-35-turbo', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${body.access_token}` },
-                body: JSON.stringify({ deployment_id: 'gpt-35-turbo', messages: [
-                    {'role': 'system', 'content': `You are an assistant for an analytics app that uses SQL. The database is postgres. You are given a question and you need to provide a SQL query that answers the question. The table schema is as follows: ${await getTableSchema()}`},
-                    // {'role': 'system', 'content': `You are an assistant for an analytics app that uses SQL. The database is postgres. You are given a question and you need to provide a SQL query that answers the question. The first column of your SQL should always be some kind of label, followed by one or more key figure columns to plot on the y-axis. The table schema is as follows: ${await getTableSchema()}`},
-                    {'role': 'user', 'content': question}]
-                })
-            })
+            const response = await fetch(`/api/ai-assistant?question=${question}&schema=${await getTableSchema()}`)
             
             let aiResponse = document.getElementById('sql').value + '\n\n'
-            const result = await response.json()
-            result.choices.forEach(choice => {
-                aiResponse += choice.message.content
-            })
-            document.getElementById('sql').value = aiResponse
+            
+            if (response.ok) {
+                document.getElementById('sql').value = aiResponse + await response.text()
+            } else {
+                document.getElementById('sql').value = "Fail to connect to AI assistant. Please try again."
+            }
         }
 
         const showAI = async () => {
