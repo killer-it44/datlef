@@ -148,10 +148,28 @@
                         options: {
                             scales: {
                                 x: {
+                                    title: {
+                                        display: true,
+                                        text: keys[0],
+                                        font: {
+                                            size: 16,
+                                            color: '#333333'
+                                        }
+                                    },
                                     ticks: {
                                         callback: function(value, index, ticks) {
                                             const label = labels[index]
                                             return (label.length > 15) ? label.substring(0, 15) + '...' : label
+                                        }
+                                    }
+                                },
+                                y: {
+                                    title: {
+                                        display: true,
+                                        text: keys[1],
+                                        font: {
+                                            size: 16,
+                                            color: '#333333'
                                         }
                                     }
                                 }
