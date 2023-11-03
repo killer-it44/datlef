@@ -26,13 +26,15 @@
         </div>
     </div>
 
-    <div style='max-height: 70vh;'>
-        <canvas id='chart'></canvas>
-    </div>
-
-    <div style='height: 20vh; overflow-y: auto;'>
-        <a id='download' style='display: none;'>Download CSV</a>
-        <div id='result'></div>
+    <div style="display: flex; height: 70vh;">
+        <div style='min-width: 50%;'>
+            <canvas id='chart'></canvas>
+        </div>
+    
+        <div style='width: 50%; overflow-y: auto;'>
+            <a id='download' style='display: none;'>Download CSV</a>
+            <div id='result'></div>
+        </div>
     </div>
 
     <script src='https://cdn.jsdelivr.net/npm/chart.js'></script>
@@ -54,12 +56,6 @@
             } else {
                 document.getElementById('sql').value = "Fail to connect to AI assistant. Please try again."
             }
-        }
-
-        const showAI = async () => {
-            document.getElementById('ai').style = document.getElementById('showAI').checked
-                ? 'position: absolute; top: 0; left: 40%; display: flex; flex-direction: column; align-items: center; width: 20%; background-color: #efefef; padding: 0.5rem 1rem; gap: 0.5rem;'
-                : 'display: none;'
         }
 
         const info = async () => {
@@ -87,7 +83,7 @@
 
         const toggleConsole = () => {
             document.getElementById('console').style = document.getElementById('showConsole').checked
-                ? 'display: flex; flex-direction: column; position: absolute; top: 2em; width: calc(100% - 1em);'
+                ? 'display: flex; flex-direction: column; top: 2em; width: calc(100% - 1em);'
                 : 'display: none;'
         }
 
@@ -146,7 +142,31 @@
                             borderColor: colors[i - 1]
                         })
                     }
-                    chart = new Chart(document.getElementById('chart'), { type: 'line', data: { labels, datasets } })
+                    chart = new Chart(document.getElementById('chart'), {
+                        type: 'line',
+                        data: { labels, datasets },
+                        options: {
+                            scales: {
+                                x: {
+                                    ticks: {
+                                        callback: function(value, index, ticks) {
+                                            const label = labels[index]
+                                            return (label.length > 15) ? label.substring(0, 15) + '...' : label
+                                        }
+                                    }
+                                }
+                            },
+                            tooltips: {
+                                enabled: true,
+                                mode: 'label',
+                                callbacks: {
+                                    label: function(tooltipItems, data) {
+                                        return tooltipItems.xLabel
+                                    }
+                                }
+                            }
+                        }
+                    })
 
                     const theaders = keys.map(key => `<th style='border: 1px solid;'>${key}</th>`).join('')
                     const trows = data.map(record => `<tr>${keys.map(key => `<td style='border: 1px solid; word-break: break-all;'>${record[key]}</td>`).join('')}</tr>`).join('')
