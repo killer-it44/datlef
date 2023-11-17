@@ -48,7 +48,7 @@ class App {
                 })
                 
                 const body = await authResponse.json()
-                const response = await fetch(`${ai.url}/api/v1/completions?deployment_id=gpt-35-turbo`, {
+                const response = await fetch(`${ai.credentials.url}/api/v1/completions?deployment_id=gpt-35-turbo`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${body.access_token}` },
                     body: JSON.stringify({ deployment_id: 'gpt-35-turbo', messages: [
