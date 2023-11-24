@@ -10,8 +10,8 @@ export VCAP_SERVICES='{
                 "clientid":"<clientid>",
                 "clientsecret":"<clientsecret>"
             }
+            "url": "https://azure-openai-serv-i057149.cfapps.sap.hana.ondemand.com"
         },
-        "url": "https://azure-openai-serv-i057149.cfapps.sap.hana.ondemand.com",
         "name": "test-llm"
     }]
 }'
