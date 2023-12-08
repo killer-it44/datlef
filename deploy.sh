@@ -6,7 +6,7 @@ cf map-route datlef-new internal.cfapps.sap.hana.ondemand.com --hostname cloud-n
 cf map-route datlef-new internal.cfapps.sap.hana.ondemand.com --hostname datlef
 cf set-env datlef-new READONLY_DB_USER "$READONLY_DB_USER"
 cf bind-service datlef-new postgres-usage-tracker
-cf bind-service datlef-new test-llm
+cf bind-service datlef-new datlef-llm
 cf start datlef-new
 cf rename datlef datlef-old
 cf stop datlef-old

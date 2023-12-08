@@ -12,7 +12,7 @@ export VCAP_SERVICES='{
             },
             "url": "https://azure-openai-serv-i057149.cfapps.sap.hana.ondemand.com"
         },
-        "name": "test-llm"
+        "name": "datlef-llm"
     }]
 }'
 export READONLY_DB_USER=test:test
