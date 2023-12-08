@@ -7,5 +7,5 @@ exports.up = async function (db) {
     await db.runSql(`ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT ON TABLES TO ${user}`)
 }
 
-exports.down = async function (db) {
+exports.down = async function () {
 }
