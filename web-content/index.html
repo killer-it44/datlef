@@ -41,8 +41,6 @@
 
     <script>
         const ai = async () => {
-            //const question = document.getElementById('sql').value
-            //const response = await fetch(`/api/ai-assistant?question=${question}&schema=${await getTableSchema()}`, {
             const response = await fetch('/api/ai-assistant', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -54,7 +52,7 @@
             if (response.ok) {
                 document.getElementById('sql').value = aiResponse + await response.text()
             } else {
-                document.getElementById('sql').value = "Fail to connect to AI assistant. Please try again."
+                document.getElementById('sql').value = 'Failed to connect to AI assistant. Please try again.'
             }
         }
 
@@ -63,18 +61,15 @@
         }
 
         const getTableSchema = async () => {
-            const sql = `SELECT viewname FROM pg_catalog.pg_views WHERE schemaname = 'public'`
-            const response = await fetch(`/api/query.json?sql=${encodeURIComponent(sql)}`)
-            const views = await response.json()
-
+            const views = ['clicks', 'views']
             let text = ''
             for (view of views) {
                 const sql = `SELECT column_name, data_type
-                    FROM information_schema.columns WHERE table_schema = 'public' AND table_name ='${view.viewname}';`
+                    FROM information_schema.columns WHERE table_schema = 'public' AND table_name ='${view}';`
                 const response = await fetch(`/api/query.json?sql=${sql}`)
                 const columns = await response.json()
                 const columnsInfo = columns.map(c => '\t' + c.column_name + ': ' + c.data_type).join('\n')
-                text += `\n${view.viewname}:\n${columnsInfo}\n`
+                text += `\n${view}:\n${columnsInfo}\n`
             }
             return text
         }
