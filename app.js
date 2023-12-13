@@ -48,10 +48,10 @@ class App {
                 })
                 
                 const body = await authResponse.json()
-                const response = await fetch(`${ai.credentials.url}/api/v1/completions?deployment_id=gpt-35-turbo`, {
+                const response = await fetch(`${ai.credentials.url}/api/v1/completions?deployment_id=gpt-4`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${body.access_token}` },
-                    body: JSON.stringify({ deployment_id: 'gpt-35-turbo', messages: [
+                    body: JSON.stringify({ deployment_id: 'gpt-4', messages: [
                         {'role': 'system', 'content': `You are an assistant for an analytics app that uses SQL. The database is postgres. You are given a question and you need to provide a SQL query that answers the question. The table schema is as follows: ${req.body.schema}`}, 
                         // {'role': 'system', 'content': `You are an assistant for an analytics app that uses SQL. The database is postgres. You are given a question and you need to provide a SQL query that answers the question. The first column of your SQL should always be some kind of label, followed by one or more key figure columns to plot on the y-axis. The table schema is as follows: ${await getTableSchema()}`},
                         {'role': 'user', 'content': `${req.body.question}`}]
