@@ -36,32 +36,48 @@ class App {
 
         app.post('/api/ai-assistant', express.json(), async (req, res, next) => {
             try {
-                const authUrl = ai.credentials.uaa.url
-                const clientId = ai.credentials.uaa.clientid
-                const clientSecret = ai.credentials.uaa.clientsecret
-                const authBody = {'client_id': clientId, 'grant_type': 'client_credentials'}
+                const authUrl = 'https://sapit-core-playground-vole.authentication.eu10.hana.ondemand.com'
+                const clientId = 'sb-a9868d84-4cbb-4e26-8be6-1442d51051b3!b313091|aisvc-662318f9-ies-aicore-service!b540'
+                const clientSecret = '5050fd60-3753-4d1f-a516-3c60da0c6b03$bgVfrP64MBsPr8L8qbHrK69NdDRMK1Dm6yxqkkyFpP4='
+                const authBody = { 'client_id': clientId, 'grant_type': 'client_credentials' }
                 const formBody = Object.keys(authBody).map(key => `${encodeURIComponent(key)}=${encodeURIComponent(authBody[key])}`).join('&')
                 const authResponse = await fetch(`${authUrl}/oauth/token`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'Authorization': `Basic ${btoa(clientId + ':' + clientSecret)}` },
                     body: formBody
                 })
-                
+
+                const json = {
+                    "orchestration_config": {
+                        "module_configurations": {
+                            "templating_module_config": {
+                                "template": [
+                                    { 'role': 'system', 'content': `You are an assistant for an analytics app that uses SQL. The database is postgres. You are given a question and you need to provide a SQL query that answers the question. The table schema is as follows: {{?schema}}` },
+                                    { "role": "user", "content": "{{?question}}" }
+                                ]
+                            },
+                            "llm_module_config": {
+                                "model_name": "gpt-4o"
+                            }
+                        }
+                    },
+                    "input_params": {
+                        "schema": req.body.schema,
+                        "question": req.body.question
+                    }
+                }
+
                 const body = await authResponse.json()
-                const response = await fetch(`${ai.credentials.url}/api/v1/completions?deployment_id=gpt-4`, {
+                const response = await fetch('https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/d4988db264d98e37/completion', {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${body.access_token}` },
-                    body: JSON.stringify({ deployment_id: 'gpt-4', messages: [
-                        {'role': 'system', 'content': `You are an assistant for an analytics app that uses SQL. The database is postgres. You are given a question and you need to provide a SQL query that answers the question. The table schema is as follows: ${req.body.schema}`}, 
-                        // {'role': 'system', 'content': `You are an assistant for an analytics app that uses SQL. The database is postgres. You are given a question and you need to provide a SQL query that answers the question. The first column of your SQL should always be some kind of label, followed by one or more key figure columns to plot on the y-axis. The table schema is as follows: ${await getTableSchema()}`},
-                        {'role': 'user', 'content': `${req.body.question}`}]
-                    })
+                    headers: { 'Content-Type': 'application/json', 'ai-resource-group': 'default', 'Authorization': `Bearer ${body.access_token}` },
+                    body: JSON.stringify(json)
                 })
-                
+
                 const result = await response.json()
                 let message = ""
-                result.choices.forEach(choice => message += choice.message.content)
-                
+                result.orchestration_result.choices.forEach(choice => message += choice.message.content)
+
                 res.status(200).send(message)
             } catch (e) {
                 next(e)
